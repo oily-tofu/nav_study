@@ -1,0 +1,32 @@
+[0.210s] Invoking command in '/home/tofu/catkin_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/robot -- -j16 -l16
+[0.264s] [ 75%] Built target pub_cmd
+[0.264s] [100%] Built target pub_cmd_sdl
+[0.275s] Invoked command in '/home/tofu/catkin_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/robot -- -j16 -l16
+[0.278s] Invoking command in '/home/tofu/catkin_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/robot
+[0.284s] -- Install configuration: ""
+[0.285s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd
+[0.285s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd_sdl
+[0.285s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch
+[0.285s] -- Installing: /home/tofu/catkin_ws/install/robot/share/robot/launch/amcl.launch.py
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/bringup_launch.py
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.yaml
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.pgm
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config/amcl.yaml
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.sh
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.dsv
+[0.286s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.bash
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.sh
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.zsh
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.dsv
+[0.287s] -- Installing: /home/tofu/catkin_ws/install/robot/share/robot/package.dsv
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/packages/robot
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig.cmake
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+[0.287s] -- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/package.xml
+[0.289s] Invoked command in '/home/tofu/catkin_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/robot

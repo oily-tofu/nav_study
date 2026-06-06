@@ -1,0 +1,33 @@
+[0.022s] Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+[0.189s] Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+[0.197s] Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model
+[0.203s] -- Install configuration: ""
+[0.203s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch
+[0.204s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch/__pycache__
+[0.204s] -- Installing: /home/tofu/catkin_ws/install/model/share/model/launch/__pycache__/show.launch.cpython-310.pyc
+[0.204s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch/show_u.launch.py
+[0.204s] -- Installing: /home/tofu/catkin_ws/install/model/share/model/launch/show.launch.py
+[0.204s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf
+[0.204s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf/omni_u.urdf
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf/omni_g.urdf
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/model.config
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/model.sdf
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/robot.world
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/package_run_dependencies/model
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/parent_prefix_path/model
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/ament_prefix_path.sh
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/ament_prefix_path.dsv
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/path.sh
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/path.dsv
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.bash
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.sh
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.zsh
+[0.205s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.dsv
+[0.206s] -- Installing: /home/tofu/catkin_ws/install/model/share/model/package.dsv
+[0.206s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/packages/model
+[0.206s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/cmake/modelConfig.cmake
+[0.206s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/cmake/modelConfig-version.cmake
+[0.206s] -- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/package.xml
+[0.208s] Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model

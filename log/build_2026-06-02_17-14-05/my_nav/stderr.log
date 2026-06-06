@@ -1,0 +1,20 @@
+In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:45:13:[m[K [01;31m[Kerror: [m[K‘[01m[KDiffmove[m[K’ does not name a type
+   45 |             [01;31m[KDiffmove[m[K diff_move_;
+      |             [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffinit::controlCallback()[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:49:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kdiff_move_[m[K’ was not declared in this scope; did you mean ‘[01m[KDiffmove[m[K’?
+   49 |             if (!is_arrived) [01;31m[Kdiff_move_[m[K.auto_move(this -> x, this -> y, this -> distance, this -> angle_to_goal, this -> goal_angle, is_arrived, cmd_vel_pub_);
+      |                              [01;31m[K^~~~~~~~~~[m[K
+      |                              [32m[KDiffmove[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:106:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 |     void Diffmove::auto_move([01;35m[Kconst double &dx[m[K, const double &dy, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:106:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  106 |    void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |                                               [01;35m[K~~~~~~~~~~~~~~^~[m[K
+
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,24 @@
+[0.025s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.209s] [ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.115s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[2.115s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:112:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.115s]   112 |    void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.115s]       |                                               [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[2.115s] 
+[4.000s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:116:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kangle_diff[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+[4.000s]   116 |         double [01;35m[Kvw[m[K = 1.0 * angle_diff; // 角速度与角度差成正比
+[4.000s]       |                [01;35m[K^~[m[K
+[4.000s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:114:16:[m[K [01;36m[Knote: [m[K‘[01m[Kangle_diff[m[K’ declared here
+[4.000s]   114 |         double [01;36m[Kangle_diff[m[K;
+[4.000s]       |                [01;36m[K^~~~~~~~~~[m[K
+[6.450s] [ 50%] [32m[1mLinking CXX static library libmy_nav.a[0m
+[6.634s] [ 50%] Built target my_nav
+[6.663s] [ 75%] [32mBuilding CXX object CMakeFiles/t_main.dir/src/t_main.cpp.o[0m
+[8.775s] [100%] [32m[1mLinking CXX executable t_main[0m
+[8.826s] /usr/bin/ld: libmy_nav.a(diff_drive_controller.cpp.o):(.bss+0x0): multiple definition of `diff_drive::is_arrived'; CMakeFiles/t_main.dir/src/t_main.cpp.o:(.bss+0x0): first defined here
+[8.826s] /usr/bin/ld: libmy_nav.a(diff_drive_controller.cpp.o):(.bss+0x1): multiple definition of `diff_drive::is_goal_received'; CMakeFiles/t_main.dir/src/t_main.cpp.o:(.bss+0x1): first defined here
+[9.194s] collect2: error: ld returned 1 exit status
+[9.197s] gmake[2]: *** [CMakeFiles/t_main.dir/build.make:207：t_main] 错误 1
+[9.197s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/t_main.dir/all] 错误 2
+[9.197s] gmake: *** [Makefile:146：all] 错误 2
+[9.199s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16

@@ -1,0 +1,7 @@
+{
+  "package_name": "c_test",
+  "non_idl_tuples": [
+    "/home/tofu/catkin_ws/src/c_test:msg/Novel.msg",
+    "/home/tofu/catkin_ws/src/c_test:action/Atest.action"
+  ]
+}

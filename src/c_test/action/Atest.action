@@ -1,0 +1,5 @@
+int32 order   #客户端 → 服务端：发送的目标
+---
+int32[] sequence  #服务端 → 客户端：最终结果
+---
+int32[] partial_sequence  #服务端 → 客户端：中间反馈

@@ -1,0 +1,40 @@
+[0.023s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.193s] [35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[0.194s] [ 50%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.794s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:63:[m[K [01;35m[Kwarning: [m[Kunnecessary parentheses in declaration of ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[2.794s]    38 |             DiffDriveController(const std::string &name); Node[01;35m[K(name)[m[K {
+[2.794s]       |                                                               [01;35m[K^~~~~~[m[K
+[2.794s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:63:[m[K [01;36m[Knote: [m[Kremove parentheses
+[2.794s]    38 |             DiffDriveController(const std::string &name); Node[01;36m[K(name)[m[K {
+[2.794s]       |                                                               [01;36m[K^~~~~~[m[K
+[2.794s]       |                                                               [31m[K-[m[K    [31m[K-[m[K
+[2.794s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:45:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.794s]    45 |             [01;31m[K}[m[K
+[2.794s]       |             [01;31m[K^[m[K
+[2.794s]       |              [32m[K;[m[K
+[2.794s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:49:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+[2.794s]    49 |         [01;31m[K{[m[K
+[2.794s]       |         [01;31m[K^[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:80:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.795s]    80 |     }
+[2.795s]       |      [01;31m[K^[m[K
+[2.795s]       |      [32m[K;[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:38:[m[K [01;31m[Kerror: [m[K‘[01m[KinitParameters[m[K’ is not a member of ‘[01m[Kdiff_drive::DiffDriveController[m[K’
+[2.795s]    40 |                 DiffDriveController::[01;31m[KinitParameters[m[K();
+[2.795s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+[2.795s]    40 |                 DiffDriveController::initParameters()[01;31m[K;[m[K
+[2.795s]       |                                                      [01;31m[K^[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:70:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[2.795s]    38 |             DiffDriveController(const std::string &name); Node(name) [01;36m[K{[m[K
+[2.795s]       |                                                                      [01;36m[K^[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::Node[m[K’
+[2.795s]    40 |                 DiffDriveController::initParameters()[01;31m[K;[m[K
+[2.795s]       |                                                      [01;31m[K^[m[K
+[2.795s]       |                                                      [01;31m[K|[m[K
+[2.795s]       |                                                      [01;31m[K<brace-enclosed initializer list>[m[K
+[2.795s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K;[m[K’ token
+[3.206s] gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+[3.206s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/my_nav.dir/all] 错误 2
+[3.206s] gmake: *** [Makefile:146：all] 错误 2
+[3.210s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16

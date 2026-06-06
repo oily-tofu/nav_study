@@ -1,0 +1,6 @@
+[console_scripts]
+path = py_test.path:main
+t_pub = py_test.t_pub:main
+t_pub_msg = py_test.t_pub_msg:main
+test = py_test.test:main
+

@@ -1,0 +1,12 @@
+[0.021s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.191s] [35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[0.191s] [ 50%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[0.309s] In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[0.309s] [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:17:10:[m[K [01;31m[Kfatal error: [m[Ktf2_geometry_msgs/tf2_geometry_msgs.hpp: 没有那个文件或目录
+[0.310s]    17 | #include [01;31m[K"tf2_geometry_msgs/tf2_geometry_msgs.hpp"[m[K
+[0.310s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.310s] compilation terminated.
+[0.313s] gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+[0.314s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/my_nav.dir/all] 错误 2
+[0.314s] gmake: *** [Makefile:146：all] 错误 2
+[0.323s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16

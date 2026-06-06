@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from c_test/action/Atest.action
+// generated code does not contain a copyright notice
+
+
+module c_test {
+  module action {
+    struct Atest_Goal {
+      @verbatim (language="comment", text=
+        "客户端 → 服务端：发送的目标")
+      int32 order;
+    };
+    struct Atest_Result {
+      @verbatim (language="comment", text=
+        "服务端 → 客户端：最终结果")
+      sequence<int32> sequence;
+    };
+    struct Atest_Feedback {
+      @verbatim (language="comment", text=
+        "服务端 → 客户端：中间反馈")
+      sequence<int32> partial_sequence;
+    };
+  };
+};

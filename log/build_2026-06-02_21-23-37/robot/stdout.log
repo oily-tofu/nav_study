@@ -1,0 +1,33 @@
+[100%] Built target pub_cmd_sdl
+[100%] Built target pub_cmd
+-- Install configuration: ""
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd_sdl
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch
+-- Installing: /home/tofu/catkin_ws/install/robot/share/robot/launch/map_pub.launch.py
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/nav.launch.py
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/localization_launch.py
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/amcl.launch.py
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/bringup_launch.py
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.yaml
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.pgm
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config/nav.yaml
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/rviz
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/rviz/nav2_default_view.rviz
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.bash
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.zsh
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.dsv
+-- Installing: /home/tofu/catkin_ws/install/robot/share/robot/package.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/packages/robot
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig-version.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/package.xml

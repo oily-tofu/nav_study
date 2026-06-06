@@ -1,0 +1,33 @@
+[0.024s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.209s] [35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[0.209s] [ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.103s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[2.103s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:125:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::cout[m[K’?
+[2.103s]   125 |             [01;31m[Kcout[m[K << "Arrived at goal!" << endl;
+[2.103s]       |             [01;31m[K^~~~[m[K
+[2.103s]       |             [32m[Kstd::cout[m[K
+[2.103s] In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:9[m[K,
+[2.103s]                  from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[2.103s] [01m[K/usr/include/c++/11/iostream:61:18:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ declared here
+[2.103s]    61 |   extern ostream [01;36m[Kcout[m[K;          /// Linked to standard output
+[2.103s]       |                  [01;36m[K^~~~[m[K
+[2.104s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:125:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kendl[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::endl[m[K’?
+[2.104s]   125 |             cout << "Arrived at goal!" << [01;31m[Kendl[m[K;
+[2.104s]       |                                           [01;31m[K^~~~[m[K
+[2.104s]       |                                           [32m[Kstd::endl[m[K
+[2.104s] In file included from [01m[K/usr/include/c++/11/iostream:39[m[K,
+[2.104s]                  from [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:9[m[K,
+[2.104s]                  from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[2.104s] [01m[K/usr/include/c++/11/ostream:684:5:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::endl[m[K’ declared here
+[2.104s]   684 |     [01;36m[Kendl[m[K(basic_ostream<_CharT, _Traits>& __os)
+[2.104s]       |     [01;36m[K^~~~[m[K
+[2.104s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:109:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.104s]   109 |     void Diffmove::auto_move([01;35m[Kconst double &dx[m[K, const double &dy, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.104s]       |                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[2.104s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:109:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.104s]   109 |     void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.104s]       |                                                [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[4.105s] gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+[4.105s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+[4.105s] gmake: *** [Makefile:146：all] 错误 2
+[4.109s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16

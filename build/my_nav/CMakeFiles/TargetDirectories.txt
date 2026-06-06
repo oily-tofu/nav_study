@@ -1,0 +1,11 @@
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/uninstall.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/my_nav_uninstall.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/my_nav.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/t_main.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/test.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/edit_cache.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/rebuild_cache.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/list_install_components.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/install.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/install/local.dir
+/home/tofu/catkin_ws/build/my_nav/CMakeFiles/install/strip.dir

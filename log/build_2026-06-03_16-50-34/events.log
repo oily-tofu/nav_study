@@ -1,0 +1,470 @@
+[0.000000] (-) TimerEvent: {}
+[0.000626] (c_test) JobQueued: {'identifier': 'c_test', 'dependencies': OrderedDict()}
+[0.000669] (model) JobQueued: {'identifier': 'model', 'dependencies': OrderedDict()}
+[0.000685] (my_nav) JobQueued: {'identifier': 'my_nav', 'dependencies': OrderedDict()}
+[0.000694] (py_test) JobQueued: {'identifier': 'py_test', 'dependencies': OrderedDict()}
+[0.000702] (robot) JobQueued: {'identifier': 'robot', 'dependencies': OrderedDict()}
+[0.000710] (c_test) JobStarted: {'identifier': 'c_test'}
+[0.007158] (model) JobStarted: {'identifier': 'model'}
+[0.010563] (my_nav) JobStarted: {'identifier': 'my_nav'}
+[0.013799] (py_test) JobStarted: {'identifier': 'py_test'}
+[0.018795] (robot) JobStarted: {'identifier': 'robot'}
+[0.023101] (c_test) JobProgress: {'identifier': 'c_test', 'progress': 'cmake'}
+[0.024625] (c_test) JobProgress: {'identifier': 'c_test', 'progress': 'build'}
+[0.024669] (c_test) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tofu/catkin_ws/build/c_test', '--', '-j16', '-l16'], 'cwd': '/home/tofu/catkin_ws/build/c_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/c_test'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.027278] (model) JobProgress: {'identifier': 'model', 'progress': 'cmake'}
+[0.029015] (model) JobProgress: {'identifier': 'model', 'progress': 'build'}
+[0.029059] (model) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tofu/catkin_ws/build/model', '--', '-j16', '-l16'], 'cwd': '/home/tofu/catkin_ws/build/model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/model'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.029724] (my_nav) JobProgress: {'identifier': 'my_nav', 'progress': 'cmake'}
+[0.031387] (my_nav) JobProgress: {'identifier': 'my_nav', 'progress': 'build'}
+[0.031451] (my_nav) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tofu/catkin_ws/build/my_nav', '--', '-j16', '-l16'], 'cwd': '/home/tofu/catkin_ws/build/my_nav', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/my_nav'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.100065] (-) TimerEvent: {}
+[0.201134] (-) TimerEvent: {}
+[0.224012] (c_test) StdoutLine: {'line': b'[  1%] Built target c_test__cpp\n'}
+[0.224951] (c_test) StdoutLine: {'line': b'[  3%] Built target c_test__rs\n'}
+[0.225082] (c_test) StdoutLine: {'line': b'[ 11%] Built target c_test__rosidl_generator_c\n'}
+[0.225274] (c_test) StdoutLine: {'line': b'[ 15%] Built target hello2_node\n'}
+[0.225316] (c_test) StdoutLine: {'line': b'[ 19%] Built target t_pub\n'}
+[0.225386] (c_test) StdoutLine: {'line': b'[ 23%] Built target hello_node\n'}
+[0.226020] (c_test) StdoutLine: {'line': b'[ 23%] Built target ament_cmake_python_copy_c_test\n'}
+[0.226173] (c_test) StdoutLine: {'line': b'[ 30%] Built target c_test__rosidl_typesupport_fastrtps_cpp\n'}
+[0.226284] (c_test) StdoutLine: {'line': b'[ 44%] Built target c_test__rosidl_typesupport_introspection_c\n'}
+[0.227566] (c_test) StdoutLine: {'line': b'[ 46%] Built target c_test__rosidl_typesupport_fastrtps_c\n'}
+[0.228793] (c_test) StdoutLine: {'line': b'[ 53%] Built target c_test__rosidl_typesupport_cpp\n'}
+[0.228841] (c_test) StdoutLine: {'line': b'[ 61%] Built target c_test__rosidl_typesupport_introspection_cpp\n'}
+[0.229276] (c_test) StdoutLine: {'line': b'[ 69%] Built target c_test__rosidl_typesupport_c\n'}
+[0.229325] (c_test) StdoutLine: {'line': b'[ 78%] Built target t_action_c\n'}
+[0.229452] (c_test) StdoutLine: {'line': b'[ 80%] Built target t_action_s\n'}
+[0.229564] (c_test) StdoutLine: {'line': b'[ 80%] Built target t_pub_msg\n'}
+[0.229658] (c_test) StdoutLine: {'line': b'[ 80%] Built target c_test\n'}
+[0.229737] (c_test) StdoutLine: {'line': b'[ 82%] Built target c_test__py\n'}
+[0.229813] (my_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_nav\x1b[0m\n'}
+[0.230221] (my_nav) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o\x1b[0m\n'}
+[0.230263] (robot) JobProgress: {'identifier': 'robot', 'progress': 'cmake'}
+[0.231087] (robot) JobProgress: {'identifier': 'robot', 'progress': 'build'}
+[0.232416] (robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tofu/catkin_ws/build/robot', '--', '-j16', '-l16'], 'cwd': '/home/tofu/catkin_ws/build/robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/robot'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.235745] (model) CommandEnded: {'returncode': 0}
+[0.237644] (model) JobProgress: {'identifier': 'model', 'progress': 'install'}
+[0.246479] (model) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tofu/catkin_ws/build/model'], 'cwd': '/home/tofu/catkin_ws/build/model', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/model'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.249804] (c_test) StdoutLine: {'line': b'[ 88%] Built target c_test__rosidl_generator_py\n'}
+[0.267681] (model) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.268693] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch\n'}
+[0.269213] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch/__pycache__\n'}
+[0.269316] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch/__pycache__/show.launch.cpython-310.pyc\n'}
+[0.269423] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/launch/show_u.launch.py\n'}
+[0.269509] (model) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/model/share/model/launch/show.launch.py\n'}
+[0.269907] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf\n'}
+[0.270121] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf/omni_u.urdf\n'}
+[0.270289] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/urdf/omni_g.urdf\n'}
+[0.270381] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world\n'}
+[0.270421] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled\n'}
+[0.270475] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/model.config\n'}
+[0.270703] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/model.sdf\n'}
+[0.270744] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/world/Untitled/robot.world\n'}
+[0.270773] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/package_run_dependencies/model\n'}
+[0.270802] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/parent_prefix_path/model\n'}
+[0.270869] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/ament_prefix_path.sh\n'}
+[0.271140] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/ament_prefix_path.dsv\n'}
+[0.271247] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/path.sh\n'}
+[0.271369] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/environment/path.dsv\n'}
+[0.271412] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.bash\n'}
+[0.271476] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.sh\n'}
+[0.271512] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.zsh\n'}
+[0.271542] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/local_setup.dsv\n'}
+[0.271569] (model) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/model/share/model/package.dsv\n'}
+[0.271596] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/ament_index/resource_index/packages/model\n'}
+[0.271624] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/cmake/modelConfig.cmake\n'}
+[0.271650] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/cmake/modelConfig-version.cmake\n'}
+[0.271675] (model) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/model/share/model/package.xml\n'}
+[0.271702] (model) CommandEnded: {'returncode': 0}
+[0.282607] (c_test) StdoutLine: {'line': b'[ 92%] Built target c_test__rosidl_typesupport_introspection_c__pyext\n'}
+[0.285861] (c_test) StdoutLine: {'line': b'[ 96%] Built target c_test__rosidl_typesupport_c__pyext\n'}
+[0.289141] (c_test) StdoutLine: {'line': b'[100%] Built target c_test__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.290743] (model) JobEnded: {'identifier': 'model', 'rc': 0}
+[0.299437] (robot) StdoutLine: {'line': b'[100%] Built target pub_cmd_sdl\n'}
+[0.299681] (robot) StdoutLine: {'line': b'[100%] Built target pub_cmd\n'}
+[0.301351] (-) TimerEvent: {}
+[0.314493] (robot) CommandEnded: {'returncode': 0}
+[0.316104] (robot) JobProgress: {'identifier': 'robot', 'progress': 'install'}
+[0.316448] (robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tofu/catkin_ws/build/robot'], 'cwd': '/home/tofu/catkin_ws/build/robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/robot'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.323673] (robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.324856] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd\n'}
+[0.325863] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd_sdl\n'}
+[0.326125] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch\n'}
+[0.326188] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/map_pub.launch.py\n'}
+[0.326243] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/nav.launch.py\n'}
+[0.326315] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/localization_launch.py\n'}
+[0.326400] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/amcl.launch.py\n'}
+[0.326449] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/launch/bringup_launch.py\n'}
+[0.326606] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map\n'}
+[0.326689] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.yaml\n'}
+[0.326788] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/map/map.pgm\n'}
+[0.326833] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config\n'}
+[0.326898] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/config/nav.yaml\n'}
+[0.326982] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/rviz\n'}
+[0.327031] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/rviz/nav2_default_view.rviz\n'}
+[0.327147] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/package_run_dependencies/robot\n'}
+[0.327211] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/parent_prefix_path/robot\n'}
+[0.327282] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.sh\n'}
+[0.327319] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/ament_prefix_path.dsv\n'}
+[0.327349] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.sh\n'}
+[0.327377] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/environment/path.dsv\n'}
+[0.327484] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.bash\n'}
+[0.327522] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.sh\n'}
+[0.327553] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.zsh\n'}
+[0.327580] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/local_setup.dsv\n'}
+[0.327614] (robot) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/robot/share/robot/package.dsv\n'}
+[0.327920] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/ament_index/resource_index/packages/robot\n'}
+[0.328044] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig.cmake\n'}
+[0.328115] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/cmake/robotConfig-version.cmake\n'}
+[0.328321] (robot) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/robot/share/robot/package.xml\n'}
+[0.329927] (robot) CommandEnded: {'returncode': 0}
+[0.336172] (c_test) StdoutLine: {'line': b'running egg_info\n'}
+[0.337013] (c_test) StdoutLine: {'line': b'writing c_test.egg-info/PKG-INFO\n'}
+[0.337118] (c_test) StdoutLine: {'line': b'writing dependency_links to c_test.egg-info/dependency_links.txt\n'}
+[0.337421] (c_test) StdoutLine: {'line': b'writing top-level names to c_test.egg-info/top_level.txt\n'}
+[0.339463] (c_test) StdoutLine: {'line': b"reading manifest file 'c_test.egg-info/SOURCES.txt'\n"}
+[0.340121] (c_test) StdoutLine: {'line': b"writing manifest file 'c_test.egg-info/SOURCES.txt'\n"}
+[0.341287] (robot) JobEnded: {'identifier': 'robot', 'rc': 0}
+[0.368981] (c_test) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_c_test_egg\n'}
+[0.379670] (c_test) CommandEnded: {'returncode': 0}
+[0.380796] (c_test) JobProgress: {'identifier': 'c_test', 'progress': 'install'}
+[0.381738] (c_test) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tofu/catkin_ws/build/c_test'], 'cwd': '/home/tofu/catkin_ws/build/c_test', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/c_test'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[0.392911] (c_test) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.393060] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/ament_index/resource_index/rosidl_interfaces/c_test\n'}
+[0.393196] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.393245] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.393280] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.393312] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__struct.h\n'}
+[0.393476] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__type_support.h\n'}
+[0.393535] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__functions.h\n'}
+[0.393572] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__functions.c\n'}
+[0.393602] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/atest.h\n'}
+[0.393629] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.393738] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.393794] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.393941] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__functions.h\n'}
+[0.393989] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__functions.c\n'}
+[0.394021] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__struct.h\n'}
+[0.394084] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__type_support.h\n'}
+[0.394122] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/novel.h\n'}
+[0.394187] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/library_path.sh\n'}
+[0.394340] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/library_path.dsv\n'}
+[0.394762] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_generator_c.so\n'}
+[0.394956] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.395006] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.395179] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.395304] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__rosidl_typesupport_fastrtps_c.h\n'}
+[0.395379] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.395415] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.395445] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__rosidl_typesupport_fastrtps_c.h\n'}
+[0.395473] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.396168] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_fastrtps_c.so\n'}
+[0.396372] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.396469] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.396528] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/atest.hpp\n'}
+[0.396574] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.396608] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__type_support.hpp\n'}
+[0.396669] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__builder.hpp\n'}
+[0.396706] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__struct.hpp\n'}
+[0.396737] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__traits.hpp\n'}
+[0.396855] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.396936] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/novel.hpp\n'}
+[0.396969] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.397003] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__builder.hpp\n'}
+[0.397080] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__type_support.hpp\n'}
+[0.397171] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__traits.hpp\n'}
+[0.397209] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__struct.hpp\n'}
+[0.397240] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.397268] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.397380] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.397419] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.397448] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/dds_fastrtps\n'}
+[0.397476] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.397501] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.397526] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.397552] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.397578] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/dds_fastrtps\n'}
+[0.397603] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.398264] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.398504] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.398562] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.398696] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.398764] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__rosidl_typesupport_introspection_c.h\n'}
+[0.398803] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__type_support.c\n'}
+[0.398833] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.398917] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.398956] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__rosidl_typesupport_introspection_c.h\n'}
+[0.399064] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__type_support.c\n'}
+[0.399295] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.399879] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_introspection_c.so\n'}
+[0.400728] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_c.so\n'}
+[0.400921] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test\n'}
+[0.401093] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action\n'}
+[0.401149] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail\n'}
+[0.401261] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.401299] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/action/detail/atest__type_support.cpp\n'}
+[0.401371] (-) TimerEvent: {}
+[0.401460] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg\n'}
+[0.401532] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail\n'}
+[0.401597] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.401635] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/include/c_test/c_test/msg/detail/novel__type_support.cpp\n'}
+[0.402203] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_introspection_cpp.so\n'}
+[0.403027] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_typesupport_cpp.so\n'}
+[0.403279] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/pythonpath.sh\n'}
+[0.403335] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/pythonpath.dsv\n'}
+[0.403415] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test-0.0.0-py3.10.egg-info\n'}
+[0.403462] (c_test) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.403670] (c_test) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.403839] (c_test) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.404007] (c_test) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.404204] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test\n'}
+[0.404326] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.404375] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/_c_test_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.404410] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/__init__.py\n'}
+[0.404439] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/_c_test_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.404522] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/_c_test_s.ep.rosidl_typesupport_c.c\n'}
+[0.404616] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/libc_test__rosidl_generator_py.so\n'}
+[0.404654] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/action\n'}
+[0.404758] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/action/__init__.py\n'}
+[0.404884] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/action/_atest.py\n'}
+[0.404921] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/action/_atest_s.c\n'}
+[0.404950] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.404978] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.405004] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/msg\n'}
+[0.405030] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/msg/_novel.py\n'}
+[0.405054] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/msg/__init__.py\n'}
+[0.405080] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/msg/_novel_s.c\n'}
+[0.429650] (c_test) StdoutLine: {'line': b"Listing '/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test'...\n"}
+[0.429819] (c_test) StdoutLine: {'line': b"Listing '/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/action'...\n"}
+[0.429857] (c_test) StdoutLine: {'line': b"Listing '/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/msg'...\n"}
+[0.433160] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.434247] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.435227] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages/c_test/c_test_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.436191] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/libc_test__rosidl_generator_py.so\n'}
+[0.436412] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/ament_index/resource_index/rust_packages/c_test\n'}
+[0.436473] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust\n'}
+[0.436614] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/Cargo.toml\n'}
+[0.436663] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src\n'}
+[0.436700] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/action.rs\n'}
+[0.436732] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/lib.rs\n'}
+[0.436767] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/action\n'}
+[0.436858] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/action/rmw.rs\n'}
+[0.436893] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/msg.rs\n'}
+[0.436950] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/msg\n'}
+[0.436999] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/src/msg/rmw.rs\n'}
+[0.437031] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/rust/build.rs\n'}
+[0.437058] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/msg/Novel.idl\n'}
+[0.437234] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/action/Atest.idl\n'}
+[0.437318] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/msg/Novel.msg\n'}
+[0.437355] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/action/Atest.action\n'}
+[0.437873] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/hello_node\n'}
+[0.438904] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/hello2_node\n'}
+[0.440272] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/t_pub\n'}
+[0.441342] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/t_pub_msg\n'}
+[0.442434] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/t_action_s\n'}
+[0.443754] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/lib/c_test/t_action_c\n'}
+[0.444271] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/ament_index/resource_index/package_run_dependencies/c_test\n'}
+[0.444356] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/ament_index/resource_index/parent_prefix_path/c_test\n'}
+[0.444445] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/ament_prefix_path.sh\n'}
+[0.444486] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/ament_prefix_path.dsv\n'}
+[0.444518] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/path.sh\n'}
+[0.444546] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/environment/path.dsv\n'}
+[0.444574] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/local_setup.bash\n'}
+[0.444601] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/local_setup.sh\n'}
+[0.444626] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/local_setup.zsh\n'}
+[0.444653] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/local_setup.dsv\n'}
+[0.444678] (c_test) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/c_test/share/c_test/package.dsv\n'}
+[0.445123] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/ament_index/resource_index/packages/c_test\n'}
+[0.445661] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_generator_cExport.cmake\n'}
+[0.446054] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.446439] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.446522] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.447152] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_generator_cppExport.cmake\n'}
+[0.447760] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.447849] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.448536] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.448616] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.449202] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_cExport.cmake\n'}
+[0.449289] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.450055] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.450316] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.450968] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_cppExport.cmake\n'}
+[0.451067] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_test__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.451483] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_generator_pyExport.cmake\n'}
+[0.451543] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/export_c_test__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.451623] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/rosidl_cmake-extras.cmake\n'}
+[0.451701] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.451784] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.451899] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.451937] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.451967] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.451995] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.452179] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_testConfig.cmake\n'}
+[0.452259] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/cmake/c_testConfig-version.cmake\n'}
+[0.452296] (c_test) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/c_test/share/c_test/package.xml\n'}
+[0.455408] (c_test) CommandEnded: {'returncode': 0}
+[0.468039] (c_test) JobEnded: {'identifier': 'c_test', 'rc': 0}
+[0.501739] (-) TimerEvent: {}
+[0.602173] (-) TimerEvent: {}
+[0.669967] (py_test) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/py_test', 'build', '--build-base', '/home/tofu/catkin_ws/build/py_test/build', 'install', '--record', '/home/tofu/catkin_ws/build/py_test/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/tofu/catkin_ws/src/py_test', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'tofu', 'LC_TIME': 'zh_CN.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tofu', 'OLDPWD': '/home/tofu', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '1672', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/tofu/catkin_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'tofu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tofu', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.TJA3P3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/tofu/catkin_ws/build/py_test', 'TURTLEBOT3_MODEL': 'waffle', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test'}, 'shell': False}
+[0.702676] (-) TimerEvent: {}
+[0.803043] (-) TimerEvent: {}
+[0.830813] (py_test) StdoutLine: {'line': b'running egg_info\n'}
+[0.831420] (py_test) StdoutLine: {'line': b'writing ../../build/py_test/py_test.egg-info/PKG-INFO\n'}
+[0.831606] (py_test) StdoutLine: {'line': b'writing dependency_links to ../../build/py_test/py_test.egg-info/dependency_links.txt\n'}
+[0.831877] (py_test) StdoutLine: {'line': b'writing entry points to ../../build/py_test/py_test.egg-info/entry_points.txt\n'}
+[0.832136] (py_test) StdoutLine: {'line': b'writing requirements to ../../build/py_test/py_test.egg-info/requires.txt\n'}
+[0.832219] (py_test) StdoutLine: {'line': b'writing top-level names to ../../build/py_test/py_test.egg-info/top_level.txt\n'}
+[0.833816] (py_test) StdoutLine: {'line': b"reading manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'\n"}
+[0.834556] (py_test) StdoutLine: {'line': b"writing manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'\n"}
+[0.834750] (py_test) StdoutLine: {'line': b'running build\n'}
+[0.834898] (py_test) StdoutLine: {'line': b'running build_py\n'}
+[0.835092] (py_test) StdoutLine: {'line': b'running install\n'}
+[0.835375] (py_test) StdoutLine: {'line': b'running install_lib\n'}
+[0.836194] (py_test) StdoutLine: {'line': b'running install_data\n'}
+[0.836389] (py_test) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.838600] (py_test) StdoutLine: {'line': b"removing '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.838898] (py_test) StdoutLine: {'line': b'Copying ../../build/py_test/py_test.egg-info to /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info\n'}
+[0.840098] (py_test) StdoutLine: {'line': b'running install_scripts\n'}
+[0.861099] (py_test) StdoutLine: {'line': b'Installing path script to /home/tofu/catkin_ws/install/py_test/lib/py_test\n'}
+[0.861368] (py_test) StdoutLine: {'line': b'Installing t_pub script to /home/tofu/catkin_ws/install/py_test/lib/py_test\n'}
+[0.861528] (py_test) StdoutLine: {'line': b'Installing t_pub_msg script to /home/tofu/catkin_ws/install/py_test/lib/py_test\n'}
+[0.861746] (py_test) StdoutLine: {'line': b'Installing test script to /home/tofu/catkin_ws/install/py_test/lib/py_test\n'}
+[0.862045] (py_test) StdoutLine: {'line': b"writing list of installed files to '/home/tofu/catkin_ws/build/py_test/install.log'\n"}
+[0.876379] (py_test) CommandEnded: {'returncode': 0}
+[0.882322] (py_test) JobEnded: {'identifier': 'py_test', 'rc': 0}
+[0.903662] (-) TimerEvent: {}
+[1.004311] (-) TimerEvent: {}
+[1.105007] (-) TimerEvent: {}
+[1.205706] (-) TimerEvent: {}
+[1.306575] (-) TimerEvent: {}
+[1.407271] (-) TimerEvent: {}
+[1.507847] (-) TimerEvent: {}
+[1.608393] (-) TimerEvent: {}
+[1.709197] (-) TimerEvent: {}
+[1.809656] (-) TimerEvent: {}
+[1.910410] (-) TimerEvent: {}
+[2.011452] (-) TimerEvent: {}
+[2.112623] (-) TimerEvent: {}
+[2.213623] (-) TimerEvent: {}
+[2.314132] (-) TimerEvent: {}
+[2.414862] (-) TimerEvent: {}
+[2.515275] (-) TimerEvent: {}
+[2.615957] (-) TimerEvent: {}
+[2.716886] (-) TimerEvent: {}
+[2.817417] (-) TimerEvent: {}
+[2.918448] (-) TimerEvent: {}
+[3.019101] (-) TimerEvent: {}
+[3.119822] (-) TimerEvent: {}
+[3.220393] (-) TimerEvent: {}
+[3.320989] (-) TimerEvent: {}
+[3.421919] (-) TimerEvent: {}
+[3.522377] (-) TimerEvent: {}
+[3.622934] (-) TimerEvent: {}
+[3.723500] (-) TimerEvent: {}
+[3.824201] (-) TimerEvent: {}
+[3.925045] (-) TimerEvent: {}
+[4.025655] (-) TimerEvent: {}
+[4.126176] (-) TimerEvent: {}
+[4.226992] (-) TimerEvent: {}
+[4.327555] (-) TimerEvent: {}
+[4.428130] (-) TimerEvent: {}
+[4.528867] (-) TimerEvent: {}
+[4.629727] (-) TimerEvent: {}
+[4.730307] (-) TimerEvent: {}
+[4.831288] (-) TimerEvent: {}
+[4.932277] (-) TimerEvent: {}
+[5.033038] (-) TimerEvent: {}
+[5.133826] (-) TimerEvent: {}
+[5.234676] (-) TimerEvent: {}
+[5.335191] (-) TimerEvent: {}
+[5.435953] (-) TimerEvent: {}
+[5.536548] (-) TimerEvent: {}
+[5.637204] (-) TimerEvent: {}
+[5.738007] (-) TimerEvent: {}
+[5.838650] (-) TimerEvent: {}
+[5.939158] (-) TimerEvent: {}
+[6.039618] (-) TimerEvent: {}
+[6.140181] (-) TimerEvent: {}
+[6.240786] (-) TimerEvent: {}
+[6.341767] (-) TimerEvent: {}
+[6.442297] (-) TimerEvent: {}
+[6.542781] (-) TimerEvent: {}
+[6.643534] (-) TimerEvent: {}
+[6.744106] (-) TimerEvent: {}
+[6.844605] (-) TimerEvent: {}
+[6.945292] (-) TimerEvent: {}
+[7.045732] (-) TimerEvent: {}
+[7.146599] (-) TimerEvent: {}
+[7.247204] (-) TimerEvent: {}
+[7.348029] (-) TimerEvent: {}
+[7.448602] (-) TimerEvent: {}
+[7.549293] (-) TimerEvent: {}
+[7.649980] (-) TimerEvent: {}
+[7.750511] (-) TimerEvent: {}
+[7.851302] (-) TimerEvent: {}
+[7.952173] (-) TimerEvent: {}
+[8.053299] (-) TimerEvent: {}
+[8.143793] (my_nav) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX static library libmy_nav.a\x1b[0m\n'}
+[8.153904] (-) TimerEvent: {}
+[8.254297] (-) TimerEvent: {}
+[8.325868] (my_nav) StdoutLine: {'line': b'[ 50%] Built target my_nav\n'}
+[8.339614] (my_nav) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target t_main\x1b[0m\n'}
+[8.354475] (-) TimerEvent: {}
+[8.359351] (my_nav) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/t_main.dir/src/t_main.cpp.o\x1b[0m\n'}
+[8.454999] (-) TimerEvent: {}
+[8.555717] (-) TimerEvent: {}
+[8.656336] (-) TimerEvent: {}
+[8.757202] (-) TimerEvent: {}
+[8.858172] (-) TimerEvent: {}
+[8.958847] (-) TimerEvent: {}
+[9.059504] (-) TimerEvent: {}
+[9.160422] (-) TimerEvent: {}
+[9.260867] (-) TimerEvent: {}
+[9.361335] (-) TimerEvent: {}
+[9.461988] (-) TimerEvent: {}
+[9.562671] (-) TimerEvent: {}
+[9.663493] (-) TimerEvent: {}
+[9.764316] (-) TimerEvent: {}
+[9.865151] (-) TimerEvent: {}
+[9.965963] (-) TimerEvent: {}
+[10.066493] (-) TimerEvent: {}
+[10.167161] (-) TimerEvent: {}
+[10.267772] (-) TimerEvent: {}
+[10.368218] (-) TimerEvent: {}
+[10.422670] (my_nav) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable t_main\x1b[0m\n'}
+[10.468564] (-) TimerEvent: {}
+[10.568975] (-) TimerEvent: {}
+[10.669860] (-) TimerEvent: {}
+[10.770286] (-) TimerEvent: {}
+[10.775674] (my_nav) StdoutLine: {'line': b'[100%] Built target t_main\n'}
+[10.784793] (my_nav) CommandEnded: {'returncode': 0}
+[10.786102] (my_nav) JobProgress: {'identifier': 'my_nav', 'progress': 'install'}
+[10.787156] (my_nav) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tofu/catkin_ws/build/my_nav'], 'cwd': '/home/tofu/catkin_ws/build/my_nav', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en_US:en'), ('USER', 'tofu'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tofu/catkin_ws/install/c_test/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tofu'), ('OLDPWD', '/home/tofu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('SYSTEMD_EXEC_PID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/tofu/catkin_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'tofu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tofu'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/tofu-virtual-machine:@/tmp/.ICE-unix/1447,unix/tofu-virtual-machine:/tmp/.ICE-unix/1447'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ff532641_61b6_4a2f_bc75_c3b00871b195'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.TJA3P3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.117'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/py_test:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tofu/catkin_ws/build/my_nav'), ('TURTLEBOT3_MODEL', 'waffle'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:/home/tofu/catkin_ws/install/c_test/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/tofu/catkin_ws/install/robot:/home/tofu/catkin_ws/install/my_nav:/home/tofu/catkin_ws/install/model:/home/tofu/catkin_ws/install/c_test:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble')]), 'shell': False}
+[10.793220] (my_nav) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.793290] (my_nav) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/my_nav/lib/libmy_nav.a\n'}
+[10.807549] (my_nav) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main\n'}
+[10.812135] (my_nav) StdoutLine: {'line': b'-- Set runtime path of "/home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main" to ""\n'}
+[10.812213] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav\n'}
+[10.812350] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/my_nav\n'}
+[10.812442] (my_nav) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/my_nav/include/my_nav/diff_drive_controller.hpp\n'}
+[10.812597] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/launch\n'}
+[10.812655] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/package_run_dependencies/my_nav\n'}
+[10.812738] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/parent_prefix_path/my_nav\n'}
+[10.812791] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.sh\n'}
+[10.812878] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.dsv\n'}
+[10.812919] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.sh\n'}
+[10.812952] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.dsv\n'}
+[10.813029] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.bash\n'}
+[10.813103] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.sh\n'}
+[10.813139] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.zsh\n'}
+[10.813170] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.dsv\n'}
+[10.813199] (my_nav) StdoutLine: {'line': b'-- Installing: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv\n'}
+[10.813549] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/packages/my_nav\n'}
+[10.813611] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig.cmake\n'}
+[10.813650] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig-version.cmake\n'}
+[10.813783] (my_nav) StdoutLine: {'line': b'-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.xml\n'}
+[10.815973] (my_nav) CommandEnded: {'returncode': 0}
+[10.825248] (my_nav) JobEnded: {'identifier': 'my_nav', 'rc': 0}
+[10.826254] (-) EventReactorShutdown: {}

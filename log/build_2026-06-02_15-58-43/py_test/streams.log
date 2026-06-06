@@ -1,0 +1,23 @@
+[0.430s] Invoking command in '/home/tofu/catkin_ws/src/py_test': PYTHONPATH=/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_test build --build-base /home/tofu/catkin_ws/build/py_test/build install --record /home/tofu/catkin_ws/build/py_test/install.log --single-version-externally-managed install_data
+[0.574s] running egg_info
+[0.575s] writing ../../build/py_test/py_test.egg-info/PKG-INFO
+[0.575s] writing dependency_links to ../../build/py_test/py_test.egg-info/dependency_links.txt
+[0.575s] writing entry points to ../../build/py_test/py_test.egg-info/entry_points.txt
+[0.575s] writing requirements to ../../build/py_test/py_test.egg-info/requires.txt
+[0.576s] writing top-level names to ../../build/py_test/py_test.egg-info/top_level.txt
+[0.577s] reading manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'
+[0.577s] writing manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'
+[0.577s] running build
+[0.577s] running build_py
+[0.578s] running install
+[0.578s] running install_lib
+[0.579s] running install_data
+[0.579s] running install_egg_info
+[0.580s] removing '/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info' (and everything under it)
+[0.580s] Copying ../../build/py_test/py_test.egg-info to /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info
+[0.581s] running install_scripts
+[0.594s] Installing t_pub script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.594s] Installing t_pub_msg script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.594s] Installing test script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.595s] writing list of installed files to '/home/tofu/catkin_ws/build/py_test/install.log'
+[0.612s] Invoked command in '/home/tofu/catkin_ws/src/py_test' returned '0': PYTHONPATH=/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_test build --build-base /home/tofu/catkin_ws/build/py_test/build install --record /home/tofu/catkin_ws/build/py_test/install.log --single-version-externally-managed install_data

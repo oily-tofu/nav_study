@@ -1,0 +1,6 @@
+Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tofu/catkin_ws/src/model -DCMAKE_INSTALL_PREFIX=/home/tofu/catkin_ws/install/model
+Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tofu/catkin_ws/src/model -DCMAKE_INSTALL_PREFIX=/home/tofu/catkin_ws/install/model
+Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model
+Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model

@@ -1,0 +1,123 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In function ‘[01m[Kvoid diff_drive::initProperties()[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub_[m[K’ was not declared in this scope
+   16 |         [01;31m[Kcmd_vel_pub_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:16:24:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   16 |         cmd_vel_pub_ = [01;31m[Kthis[m[K->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+      |                        [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:16:72:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   16 | _vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist[01;31m[K>[m[K("cmd_vel", 10);
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:16:74:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   16 | el_pub_ = this->create_publisher<geometry_msgs::msg::Twist>([01;35m[K"cmd_vel"[m[K, 10);
+      |                                                             [01;35m[K^~~~~~~~~[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:18:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   18 |         [01;31m[Ktf_buffer_[m[K = std::make_shared<tf2_ros::Buffer>(this->get_clock());
+      |         [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:18:56:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   18 |         tf_buffer_ = std::make_shared<tf2_ros::Buffer>([01;31m[Kthis[m[K->get_clock());
+      |                                                        [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_listener_[m[K’ was not declared in this scope
+   20 |         [01;31m[Ktf_listener_[m[K = std::make_shared<tf2_ros::TransformListener>(*tf_buffer_);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_sub_[m[K’ was not declared in this scope
+   21 |         [01;31m[Kgoal_sub_[m[K = this->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal", 10, std::bind(&Diffinit::goalCallback, this, std::placeholders::_1));
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   21 |         goal_sub_ = [01;31m[Kthis[m[K->create_subscription<geometry_msgs::msg::PoseStamped>("/move_base_simple/goal", 10, std::bind(&Diffinit::goalCallback, this, std::placeholders::_1));
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:78:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   21 |  = this->create_subscription<geometry_msgs::msg::PoseStamped[01;31m[K>[m[K("/move_base_simple/goal", 10, std::bind(&Diffinit::goalCallback, this, std::placeholders::_1));
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:80:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   21 |  this->create_subscription<geometry_msgs::msg::PoseStamped>([01;35m[K"/move_base_simple/goal"[m[K, 10, std::bind(&Diffinit::goalCallback, this, std::placeholders::_1));
+      |                                                             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:131:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid diff_drive::Diffinit::goalCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’ is protected within this context
+   21 | Stamped>("/move_base_simple/goal", 10, std::bind(&Diffinit::[01;31m[KgoalCallback[m[K, this, std::placeholders::_1));
+      |                                                             [01;31m[K^~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:40:18:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   40 |             void [01;36m[KgoalCallback[m[K(const geometry_msgs::msg::PoseStamped::SharedPtr msg);
+      |                  [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:21:145:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   21 | e_base_simple/goal", 10, std::bind(&Diffinit::goalCallback, [01;31m[Kthis[m[K, std::placeholders::_1));
+      |                                                             [01;31m[K^~~~[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:23:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_timer_[m[K’ was not declared in this scope
+   23 |         [01;31m[Kcontrol_timer_[m[K = this->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Diffinit::controlCallback, this));
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:23:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   23 |         control_timer_ = [01;31m[Kthis[m[K->create_wall_timer(std::chrono::milliseconds(100), std::bind(&Diffinit::controlCallback, this));
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:23:103:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid diff_drive::Diffinit::controlCallback()[m[K’ is protected within this context
+   23 | _timer(std::chrono::milliseconds(100), std::bind(&Diffinit::[01;31m[KcontrolCallback[m[K, this));
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:41:18:[m[K [01;36m[Knote: [m[Kdeclared protected here
+   41 |             void [01;36m[KcontrolCallback[m[K();
+      |                  [01;36m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:23:120:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   23 | hrono::milliseconds(100), std::bind(&Diffinit::controlCallback, [01;31m[Kthis[m[K));
+      |                                                                 [01;31m[K^~~~[m[K
+
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In function ‘[01m[Kvoid diff_drive::goalCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:27:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_map[m[K’ was not declared in this scope
+   27 |         [01;31m[Kgoal_map[m[K = *msg;
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In function ‘[01m[Kvoid diff_drive::controlCallback()[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:34:27:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+   34 |             map_to_base = [01;31m[Ktf_buffer_[m[K->lookupTransform("base_link", "map", tf2::TimePointZero);
+      |                           [01;31m[K^~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:10[m[K,
+                 from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   37 |             RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Could not transform: %s", ex.what());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   37 |             [01;31m[KRCLCPP_WARN[m[K(this->get_logger(), "Could not transform: %s", ex.what());
+      |             [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:10[m[K,
+                 from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   37 |             RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Could not transform: %s", ex.what());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   37 |             RCLCPP_WARN([01;31m[Kthis[m[K->get_logger(), "Could not transform: %s", ex.what());
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal_map[m[K’ was not declared in this scope
+   40 |         tf2::doTransform([01;31m[Kgoal_map[m[K, this -> goal_baselink, map_to_base);
+      |                          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:36:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   40 |         tf2::doTransform(goal_map, [01;31m[Kthis[m[K -> goal_baselink, map_to_base);
+      |                                    [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

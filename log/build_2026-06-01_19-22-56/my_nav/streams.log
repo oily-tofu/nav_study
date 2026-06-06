@@ -1,0 +1,52 @@
+[0.023s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.198s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.198s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.198s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.198s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.198s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.198s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.198s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.198s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.198s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.268s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.302s] -- Found nav2_bringup: 1.1.20 (/opt/ros/humble/share/nav2_bringup/cmake)
+[0.302s] -- Found geometry_msgs: 4.9.1 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.305s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.315s] -- Found tf2_ros: 0.25.20 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.365s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.410s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.410s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/tofu/catkin_ws/src/my_nav/include>
+[0.410s] -- Configured cppcheck exclude dirs and/or files: 
+[0.410s] -- Added test 'lint_cmake' to check CMake code style
+[0.411s] -- Added test 'uncrustify' to check C / C++ code style
+[0.411s] -- Configured uncrustify additional arguments: 
+[0.411s] -- Added test 'xmllint' to check XML markup files
+[0.412s] -- Configuring done
+[0.426s] -- Generating done
+[0.432s] -- Build files have been written to: /home/tofu/catkin_ws/build/my_nav
+[0.467s] [ 50%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.265s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In constructor ‘[01m[Kdiff_drive::DiffDriveController::DiffDriveController(const rclcpp::NodeOptions&)[m[K’:
+[2.265s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:8:20:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::Duration::Duration()[m[K’ is private within this context
+[2.265s]     8 |       running_(true[01;31m[K)[m[K
+[2.265s]       |                    [01;31m[K^[m[K
+[2.265s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:20[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_graph_interface.hpp:33[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:42[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.265s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.266s]                  from [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:10[m[K,
+[2.266s]                  from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[2.266s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/duration.hpp:151:3:[m[K [01;36m[Knote: [m[Kdeclared private here
+[2.266s]   151 |   [01;36m[KDuration[m[K() = default;
+[2.266s]       |   [01;36m[K^~~~~~~~[m[K
+[4.664s] gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+[4.664s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/my_nav.dir/all] 错误 2
+[4.665s] gmake: *** [Makefile:146：all] 错误 2
+[4.667s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16

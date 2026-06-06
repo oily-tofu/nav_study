@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:111:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  111 |     void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |                                                [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:115:16:[m[K [01;35m[Kwarning: [m[K‘[01m[Kangle_diff[m[K’ is used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wuninitialized-Wuninitialized]8;;[m[K]
+  115 |         double [01;35m[Kvw[m[K = 1.0 * angle_diff; // 角速度与角度差成正比
+      |                [01;35m[K^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:113:16:[m[K [01;36m[Knote: [m[K‘[01m[Kangle_diff[m[K’ declared here
+  113 |         double [01;36m[Kangle_diff[m[K;
+      |                [01;36m[K^~~~~~~~~~[m[K
+[ 50%] [32m[1mLinking CXX static library libmy_nav.a[0m
+[ 50%] Built target my_nav
+[35m[1mConsolidate compiler generated dependencies of target t_main[0m
+[ 75%] [32m[1mLinking CXX executable t_main[0m
+[100%] Built target t_main
+-- Install configuration: ""
+-- Installing: /home/tofu/catkin_ws/install/my_nav/lib/libmy_nav.a
+-- Installing: /home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main
+-- Set runtime path of "/home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main" to ""
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/diff_drive_controller.hpp
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/launch
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/package_run_dependencies/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/parent_prefix_path/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.bash
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.zsh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.dsv
+-- Installing: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/packages/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig-version.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.xml

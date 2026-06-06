@@ -1,0 +1,4 @@
+Invoking command in '/home/tofu/catkin_ws/build/c_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/c_test -- -j16 -l16
+Invoked command in '/home/tofu/catkin_ws/build/c_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/c_test -- -j16 -l16
+Invoking command in '/home/tofu/catkin_ws/build/c_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/c_test
+Invoked command in '/home/tofu/catkin_ws/build/c_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/c_test

@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:44:10:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kvoid diff_drive::Diffinit::get_msgs(const PoseStamped&)[m[K’
+   44 |     void [01;31m[KDiffinit[m[K::get_msgs(const geometry_msgs::msg::PoseStamped &goal_baselink){
+      |          [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:44:10:[m[K [01;36m[Knote: [m[Kno functions named ‘[01m[Kvoid diff_drive::Diffinit::get_msgs(const PoseStamped&)[m[K’
+In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:21:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass diff_drive::Diffinit[m[K’ defined here
+   21 |     class [01;36m[KDiffinit[m[K : public rclcpp::Node
+      |           [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

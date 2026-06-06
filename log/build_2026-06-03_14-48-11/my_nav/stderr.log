@@ -1,0 +1,4 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:115:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  115 |     void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |                                                [01;35m[K~~~~~~~~~~~~~~^~[m[K

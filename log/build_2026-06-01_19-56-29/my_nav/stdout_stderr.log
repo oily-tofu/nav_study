@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:63:[m[K [01;35m[Kwarning: [m[Kunnecessary parentheses in declaration of ‘[01m[Kname[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   38 |             DiffDriveController(const std::string &name); Node[01;35m[K(name)[m[K {
+      |                                                               [01;35m[K^~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:63:[m[K [01;36m[Knote: [m[Kremove parentheses
+   38 |             DiffDriveController(const std::string &name); Node[01;36m[K(name)[m[K {
+      |                                                               [01;36m[K^~~~~~[m[K
+      |                                                               [31m[K-[m[K    [31m[K-[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:45:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   45 |             [01;31m[K}[m[K
+      |             [01;31m[K^[m[K
+      |              [32m[K;[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:49:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K{[m[K’ token
+   49 |         [01;31m[K{[m[K
+      |         [01;31m[K^[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:80:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   80 |     }
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:38:[m[K [01;31m[Kerror: [m[K‘[01m[KinitParameters[m[K’ is not a member of ‘[01m[Kdiff_drive::DiffDriveController[m[K’
+   40 |                 DiffDriveController::[01;31m[KinitParameters[m[K();
+      |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K;[m[K’ token
+   40 |                 DiffDriveController::initParameters()[01;31m[K;[m[K
+      |                                                      [01;31m[K^[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:38:70:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   38 |             DiffDriveController(const std::string &name); Node(name) [01;36m[K{[m[K
+      |                                                                      [01;36m[K^[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K{<expression error>}[m[K’ from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Krclcpp::Node[m[K’
+   40 |                 DiffDriveController::initParameters()[01;31m[K;[m[K
+      |                                                      [01;31m[K^[m[K
+      |                                                      [01;31m[K|[m[K
+      |                                                      [01;31m[K<brace-enclosed initializer list>[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:40:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K;[m[K’ token
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

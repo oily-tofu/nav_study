@@ -1,0 +1,15 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffinit::goalCallback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:37:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass diff_drive::Diffinit[m[K’ has no member named ‘[01m[Kis_arrived[m[K’
+   37 |         this -> [01;31m[Kis_arrived[m[K = false;
+      |                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffinit::controlCallback()[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:55:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kis_arrived[m[K’ was not declared in this scope
+   55 |                 diff_move_.auto_move(robot_state, [01;31m[Kis_arrived[m[K, cmd_vel_pub_);
+      |                                                   [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(diff_drive::RobotState, bool&, const SharedPtr&)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:114:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis_arrived[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  114 |     void Diffmove::auto_move(const RobotState robot_state, [01;35m[Kbool &is_arrived[m[K, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |                                                            [01;35m[K~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

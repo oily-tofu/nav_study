@@ -1,0 +1,41 @@
+[0.021s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.202s] [35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[0.202s] [ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.044s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::auto_move(const double&, const double&, const double&, const double&, const double&, bool&, const SharedPtr&)[m[K’:
+[2.044s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:111:44:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.044s]   111 |     void Diffmove::auto_move([01;35m[Kconst double &dx[m[K, const double &dy, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.044s]       |                              [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[2.044s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:111:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[2.044s]   111 |    void Diffmove::auto_move(const double &dx, [01;35m[Kconst double &dy[m[K, const double &distance, const double &angle_to_goal, const double &goal_angle, bool &is_arrived, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.044s]       |                                               [01;35m[K~~~~~~~~~~~~~~^~[m[K
+[2.044s] 
+[6.329s] [ 50%] [32m[1mLinking CXX static library libmy_nav.a[0m
+[6.515s] [ 50%] Built target my_nav
+[6.543s] [ 75%] [32m[1mLinking CXX executable t_main[0m
+[6.870s] [100%] Built target t_main
+[6.883s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[6.885s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/my_nav
+[6.891s] -- Install configuration: ""
+[6.891s] -- Installing: /home/tofu/catkin_ws/install/my_nav/lib/libmy_nav.a
+[6.909s] -- Installing: /home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main
+[6.916s] -- Set runtime path of "/home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main" to ""
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/my_nav
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/diff_drive_controller.hpp
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/launch
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/package_run_dependencies/my_nav
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/parent_prefix_path/my_nav
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.sh
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.dsv
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.sh
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.dsv
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.bash
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.sh
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.zsh
+[6.916s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.dsv
+[6.917s] -- Installing: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv
+[6.917s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/packages/my_nav
+[6.917s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig.cmake
+[6.917s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig-version.cmake
+[6.917s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.xml
+[6.919s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/my_nav

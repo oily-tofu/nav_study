@@ -1,0 +1,349 @@
+[0.135s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.135s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c6849d61480>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c6849e6a8c0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c6849e6a8c0>>)
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.311s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.311s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/tofu/catkin_ws'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/c_test) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/c_test' with type 'ros.ament_cmake' and name 'c_test'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/model) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/model' with type 'ros.ament_cmake' and name 'model'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_nav) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_nav' with type 'ros.ament_cmake' and name 'my_nav'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_test) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_test' with type 'ros.ament_python' and name 'py_test'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot' with type 'ros.ament_cmake' and name 'robot'
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.357s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.359s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/tofu/catkin_ws/install
+[0.361s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 465 installed packages in /opt/ros/humble
+[0.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_args' from command line to 'None'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_target' from command line to 'None'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.433s] Level 5:colcon.colcon_core.verb:set package 'c_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.433s] DEBUG:colcon.colcon_core.verb:Building package 'c_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofu/catkin_ws/build/c_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofu/catkin_ws/install/c_test', 'merge_install': False, 'path': '/home/tofu/catkin_ws/src/c_test', 'symlink_install': False, 'test_result_base': None}
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_target' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_clean_cache' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_clean_first' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'cmake_force_configure' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'ament_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'catkin_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'model' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.434s] DEBUG:colcon.colcon_core.verb:Building package 'model' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofu/catkin_ws/build/model', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofu/catkin_ws/install/model', 'merge_install': False, 'path': '/home/tofu/catkin_ws/src/model', 'symlink_install': False, 'test_result_base': None}
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_target' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_clean_cache' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_clean_first' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'cmake_force_configure' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'ament_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'catkin_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'my_nav' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.434s] DEBUG:colcon.colcon_core.verb:Building package 'my_nav' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofu/catkin_ws/build/my_nav', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofu/catkin_ws/install/my_nav', 'merge_install': False, 'path': '/home/tofu/catkin_ws/src/my_nav', 'symlink_install': False, 'test_result_base': None}
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_target' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.434s] Level 5:colcon.colcon_core.verb:set package 'py_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.435s] DEBUG:colcon.colcon_core.verb:Building package 'py_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofu/catkin_ws/build/py_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofu/catkin_ws/install/py_test', 'merge_install': False, 'path': '/home/tofu/catkin_ws/src/py_test', 'symlink_install': False, 'test_result_base': None}
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_target' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_clean_first' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'cmake_force_configure' from command line to 'False'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'ament_cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.435s] Level 5:colcon.colcon_core.verb:set package 'robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.435s] DEBUG:colcon.colcon_core.verb:Building package 'robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/tofu/catkin_ws/build/robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/tofu/catkin_ws/install/robot', 'merge_install': False, 'path': '/home/tofu/catkin_ws/src/robot', 'symlink_install': False, 'test_result_base': None}
+[0.435s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.436s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.437s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofu/catkin_ws/src/c_test' with build type 'ament_cmake'
+[0.437s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofu/catkin_ws/src/c_test'
+[0.439s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.439s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.439s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.443s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofu/catkin_ws/src/model' with build type 'ament_cmake'
+[0.444s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofu/catkin_ws/src/model'
+[0.444s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.444s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.447s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofu/catkin_ws/src/my_nav' with build type 'ament_cmake'
+[0.447s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofu/catkin_ws/src/my_nav'
+[0.448s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.448s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/tofu/catkin_ws/src/py_test' with build type 'ament_python'
+[0.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_test', 'ament_prefix_path')
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/py_test/share/py_test/hook/ament_prefix_path.ps1'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/py_test/share/py_test/hook/ament_prefix_path.dsv'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/py_test/share/py_test/hook/ament_prefix_path.sh'
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.457s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/tofu/catkin_ws/src/robot' with build type 'ament_cmake'
+[0.457s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/tofu/catkin_ws/src/robot'
+[0.457s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.457s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/c_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/c_test -- -j16 -l16
+[0.473s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+[0.476s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.634s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/tofu/catkin_ws/src/py_test'
+[0.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.634s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/robot -- -j16 -l16
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/model -- -j16 -l16
+[0.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/model': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model
+[0.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model)
+[0.676s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/model' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/model
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model' for CMake module files
+[0.679s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model' for CMake config files
+[0.679s] Level 1:colcon.colcon_core.shell:create_environment_hook('model', 'cmake_prefix_path')
+[0.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.ps1'
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.dsv'
+[0.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.sh'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/bin'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/lib/pkgconfig/model.pc'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/lib/python3.10/site-packages'
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/bin'
+[0.682s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.ps1'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/model/share/model/package.dsv'
+[0.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.sh'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.bash'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.zsh'
+[0.685s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/model/share/colcon-core/packages/model)
+[0.685s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(model)
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model' for CMake module files
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model' for CMake config files
+[0.686s] Level 1:colcon.colcon_core.shell:create_environment_hook('model', 'cmake_prefix_path')
+[0.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.ps1'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.dsv'
+[0.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/model/share/model/hook/cmake_prefix_path.sh'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/bin'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/lib/pkgconfig/model.pc'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/lib/python3.10/site-packages'
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/model/bin'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/model/share/model/package.dsv'
+[0.689s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.sh'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.bash'
+[0.690s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/model/share/model/package.zsh'
+[0.691s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/model/share/colcon-core/packages/model)
+[0.717s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/robot -- -j16 -l16
+[0.721s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/robot
+[0.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot)
+[0.734s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot' for CMake module files
+[0.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/robot
+[0.735s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot' for CMake config files
+[0.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot', 'cmake_prefix_path')
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.ps1'
+[0.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.dsv'
+[0.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.sh'
+[0.737s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/bin'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib/pkgconfig/robot.pc'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib/python3.10/site-packages'
+[0.738s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/bin'
+[0.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.ps1'
+[0.739s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/robot/share/robot/package.dsv'
+[0.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.sh'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.bash'
+[0.740s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.zsh'
+[0.740s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/robot/share/colcon-core/packages/robot)
+[0.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot)
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot' for CMake module files
+[0.741s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot' for CMake config files
+[0.741s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot', 'cmake_prefix_path')
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.ps1'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.dsv'
+[0.742s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/robot/share/robot/hook/cmake_prefix_path.sh'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/bin'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib/pkgconfig/robot.pc'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/lib/python3.10/site-packages'
+[0.743s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/robot/bin'
+[0.743s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.ps1'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/robot/share/robot/package.dsv'
+[0.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.sh'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.bash'
+[0.745s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/robot/share/robot/package.zsh'
+[0.745s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/robot/share/colcon-core/packages/robot)
+[0.760s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/c_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/c_test -- -j16 -l16
+[0.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/build/c_test': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/c_test
+[0.816s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(c_test)
+[0.816s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test' for CMake module files
+[0.817s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/c_test' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/c_test
+[0.817s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test' for CMake config files
+[0.817s] Level 1:colcon.colcon_core.shell:create_environment_hook('c_test', 'cmake_prefix_path')
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.ps1'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.dsv'
+[0.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.sh'
+[0.819s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib'
+[0.819s] Level 1:colcon.colcon_core.shell:create_environment_hook('c_test', 'ld_library_path_lib')
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.ps1'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.dsv'
+[0.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.sh'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/bin'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib/pkgconfig/c_test.pc'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib/python3.10/site-packages'
+[0.821s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/bin'
+[0.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.ps1'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/package.dsv'
+[0.822s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.sh'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.bash'
+[0.823s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.zsh'
+[0.823s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/c_test/share/colcon-core/packages/c_test)
+[0.824s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(c_test)
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test' for CMake module files
+[0.824s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test' for CMake config files
+[0.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('c_test', 'cmake_prefix_path')
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.ps1'
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.dsv'
+[0.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/cmake_prefix_path.sh'
+[0.826s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib'
+[0.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('c_test', 'ld_library_path_lib')
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.ps1'
+[0.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.dsv'
+[0.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/c_test/share/c_test/hook/ld_library_path_lib.sh'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/bin'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib/pkgconfig/c_test.pc'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/lib/python3.10/site-packages'
+[0.827s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/c_test/bin'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.ps1'
+[0.828s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/c_test/share/c_test/package.dsv'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.sh'
+[0.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.bash'
+[0.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/c_test/share/c_test/package.zsh'
+[0.830s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/c_test/share/colcon-core/packages/c_test)
+[0.924s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/tofu/catkin_ws/src/py_test': PYTHONPATH=/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_test build --build-base /home/tofu/catkin_ws/build/py_test/build install --record /home/tofu/catkin_ws/build/py_test/install.log --single-version-externally-managed install_data
+[0.971s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.971s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_nav)
+[0.972s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav' for CMake module files
+[0.972s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav' for CMake config files
+[0.972s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_nav', 'cmake_prefix_path')
+[0.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/my_nav/share/my_nav/hook/cmake_prefix_path.ps1'
+[0.973s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/tofu/catkin_ws/install/my_nav/share/my_nav/hook/cmake_prefix_path.dsv'
+[0.974s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/tofu/catkin_ws/install/my_nav/share/my_nav/hook/cmake_prefix_path.sh'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav/bin'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav/lib/pkgconfig/my_nav.pc'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav/lib/python3.10/site-packages'
+[0.974s] Level 1:colcon.colcon_core.environment:checking '/home/tofu/catkin_ws/install/my_nav/bin'
+[0.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/my_nav/share/my_nav/package.ps1'
+[0.975s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/my_nav/share/my_nav/package.sh'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/my_nav/share/my_nav/package.bash'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/tofu/catkin_ws/install/my_nav/share/my_nav/package.zsh'
+[0.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/tofu/catkin_ws/install/my_nav/share/colcon-core/packages/my_nav)
+[1.110s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.111s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[1.111s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.117s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.117s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.117s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.137s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.137s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofu/catkin_ws/install/local_setup.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofu/catkin_ws/install/_local_setup_util_ps1.py'
+[1.139s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofu/catkin_ws/install/setup.ps1'
+[1.140s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofu/catkin_ws/install/local_setup.sh'
+[1.141s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/tofu/catkin_ws/install/_local_setup_util_sh.py'
+[1.142s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofu/catkin_ws/install/setup.sh'
+[1.142s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofu/catkin_ws/install/local_setup.bash'
+[1.143s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofu/catkin_ws/install/setup.bash'
+[1.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/tofu/catkin_ws/install/local_setup.zsh'
+[1.144s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/tofu/catkin_ws/install/setup.zsh'

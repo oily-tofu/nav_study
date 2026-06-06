@@ -1,0 +1,45 @@
+[0.565s] Invoking command in '/home/tofu/catkin_ws/src/py_test': PYTHONPATH=/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_test build --build-base /home/tofu/catkin_ws/build/py_test/build install --record /home/tofu/catkin_ws/build/py_test/install.log --single-version-externally-managed install_data
+[0.717s] running egg_info
+[0.717s] creating ../../build/py_test/py_test.egg-info
+[0.717s] writing ../../build/py_test/py_test.egg-info/PKG-INFO
+[0.718s] writing dependency_links to ../../build/py_test/py_test.egg-info/dependency_links.txt
+[0.718s] writing entry points to ../../build/py_test/py_test.egg-info/entry_points.txt
+[0.718s] writing requirements to ../../build/py_test/py_test.egg-info/requires.txt
+[0.718s] writing top-level names to ../../build/py_test/py_test.egg-info/top_level.txt
+[0.718s] writing manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'
+[0.719s] reading manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'
+[0.719s] writing manifest file '../../build/py_test/py_test.egg-info/SOURCES.txt'
+[0.720s] running build
+[0.720s] running build_py
+[0.720s] creating /home/tofu/catkin_ws/build/py_test/build
+[0.720s] creating /home/tofu/catkin_ws/build/py_test/build/lib
+[0.720s] creating /home/tofu/catkin_ws/build/py_test/build/lib/py_test
+[0.720s] copying py_test/__init__.py -> /home/tofu/catkin_ws/build/py_test/build/lib/py_test
+[0.720s] copying py_test/test.py -> /home/tofu/catkin_ws/build/py_test/build/lib/py_test
+[0.720s] copying py_test/t_pub_msg.py -> /home/tofu/catkin_ws/build/py_test/build/lib/py_test
+[0.721s] copying py_test/t_pub.py -> /home/tofu/catkin_ws/build/py_test/build/lib/py_test
+[0.722s] running install
+[0.722s] running install_lib
+[0.722s] creating /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test
+[0.722s] copying /home/tofu/catkin_ws/build/py_test/build/lib/py_test/__init__.py -> /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test
+[0.723s] copying /home/tofu/catkin_ws/build/py_test/build/lib/py_test/test.py -> /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test
+[0.723s] copying /home/tofu/catkin_ws/build/py_test/build/lib/py_test/t_pub_msg.py -> /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test
+[0.723s] copying /home/tofu/catkin_ws/build/py_test/build/lib/py_test/t_pub.py -> /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test
+[0.723s] byte-compiling /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__init__.py to __init__.cpython-310.pyc
+[0.723s] byte-compiling /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/test.py to test.cpython-310.pyc
+[0.724s] byte-compiling /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/t_pub_msg.py to t_pub_msg.cpython-310.pyc
+[0.724s] byte-compiling /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/t_pub.py to t_pub.cpython-310.pyc
+[0.724s] running install_data
+[0.724s] creating /home/tofu/catkin_ws/install/py_test/share/ament_index
+[0.724s] creating /home/tofu/catkin_ws/install/py_test/share/ament_index/resource_index
+[0.725s] creating /home/tofu/catkin_ws/install/py_test/share/ament_index/resource_index/packages
+[0.725s] copying resource/py_test -> /home/tofu/catkin_ws/install/py_test/share/ament_index/resource_index/packages
+[0.725s] copying package.xml -> /home/tofu/catkin_ws/install/py_test/share/py_test
+[0.725s] running install_egg_info
+[0.726s] Copying ../../build/py_test/py_test.egg-info to /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info
+[0.727s] running install_scripts
+[0.741s] Installing t_pub script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.741s] Installing t_pub_msg script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.741s] Installing test script to /home/tofu/catkin_ws/install/py_test/lib/py_test
+[0.741s] writing list of installed files to '/home/tofu/catkin_ws/build/py_test/install.log'
+[0.761s] Invoked command in '/home/tofu/catkin_ws/src/py_test' returned '0': PYTHONPATH=/home/tofu/catkin_ws/build/py_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_test build --build-base /home/tofu/catkin_ws/build/py_test/build install --record /home/tofu/catkin_ws/build/py_test/install.log --single-version-externally-managed install_data

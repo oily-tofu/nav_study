@@ -1,0 +1,4 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::Diffmove::pure_pursuit(diff_drive::RobotState, const SharedPtr&)[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:155:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_to_goal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  155 |         double [01;35m[Kangle_to_goal[m[K = std::atan2(robot_state.y, robot_state.x);
+      |                [01;35m[K^~~~~~~~~~~~~[m[K

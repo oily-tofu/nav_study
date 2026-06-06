@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[ 50%] Built target my_nav
+[35m[1mConsolidate compiler generated dependencies of target t_main[0m
+[100%] Built target t_main
+-- Install configuration: ""
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/lib/libmy_nav.a
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/diff_drive_controller.hpp
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/launch
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/package_run_dependencies/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/parent_prefix_path/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.bash
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.sh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.zsh
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.dsv
+-- Installing: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/packages/my_nav
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig-version.cmake
+-- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.xml

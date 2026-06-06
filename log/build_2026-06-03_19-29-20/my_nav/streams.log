@@ -1,0 +1,33 @@
+[0.024s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.198s] [ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[9.100s] [ 50%] [32m[1mLinking CXX static library libmy_nav.a[0m
+[9.293s] [ 50%] Built target my_nav
+[9.320s] [ 75%] [32mBuilding CXX object CMakeFiles/t_main.dir/src/t_main.cpp.o[0m
+[11.608s] [100%] [32m[1mLinking CXX executable t_main[0m
+[11.943s] [100%] Built target t_main
+[11.955s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[11.957s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/my_nav
+[11.963s] -- Install configuration: ""
+[11.963s] -- Installing: /home/tofu/catkin_ws/install/my_nav/lib/libmy_nav.a
+[11.979s] -- Installing: /home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main
+[11.984s] -- Set runtime path of "/home/tofu/catkin_ws/install/my_nav/lib/my_nav/t_main" to ""
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/include/my_nav/my_nav
+[11.985s] -- Installing: /home/tofu/catkin_ws/install/my_nav/include/my_nav/diff_drive_controller.hpp
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/launch
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/package_run_dependencies/my_nav
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/parent_prefix_path/my_nav
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.sh
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/ament_prefix_path.dsv
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.sh
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/environment/path.dsv
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.bash
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.sh
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.zsh
+[11.985s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/local_setup.dsv
+[11.985s] -- Installing: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.dsv
+[11.986s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/ament_index/resource_index/packages/my_nav
+[11.986s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig.cmake
+[11.986s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/cmake/my_navConfig-version.cmake
+[11.986s] -- Up-to-date: /home/tofu/catkin_ws/install/my_nav/share/my_nav/package.xml
+[11.989s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --install /home/tofu/catkin_ws/build/my_nav

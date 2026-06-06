@@ -1,0 +1,5 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[ 50%] [32m[1mLinking CXX static library libmy_nav.a[0m
+[ 50%] Built target my_nav
+[ 75%] [32mBuilding CXX object CMakeFiles/t_main.dir/src/t_main.cpp.o[0m
+[100%] [32m[1mLinking CXX executable t_main[0m

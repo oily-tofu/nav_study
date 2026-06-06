@@ -1,0 +1,13 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:[m[K In member function ‘[01m[Kvoid diff_drive::DiffDriveController::getTransform()[m[K’:
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:115:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kqx[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  115 |                     double [01;35m[Kqx[m[K = transform.transform.rotation.x;
+      |                            [01;35m[K^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:116:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kqy[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  116 |                     double [01;35m[Kqy[m[K = transform.transform.rotation.y;
+      |                            [01;35m[K^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:117:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kqz[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  117 |                     double [01;35m[Kqz[m[K = transform.transform.rotation.z;
+      |                            [01;35m[K^~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:118:28:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kqw[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  118 |                     double [01;35m[Kqw[m[K = transform.transform.rotation.w;
+      |                            [01;35m[K^~[m[K

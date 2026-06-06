@@ -1,0 +1,74 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 以下为原目标点LQR控制代码（保留以供参考）
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // void LQRmove::LQR(const diff_drive::RobotState robot_state, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+    // {
+
+    //     Eigen::MatrixXd A(3,3); // 状态转移矩阵
+    //     Eigen::MatrixXd B(3,2); // 控制输入矩阵
+    //     Eigen::MatrixXd Q(3, 3); // 状态权重矩阵
+    //     Eigen::MatrixXd R(2, 2); // 控制输入权重矩阵
+
+    //     double v = 0.3; // 线速度与距离成正比
+    //     double T_time = 1.0 / robot_state.hz;
+    //     double cos_theta = std::cos(robot_state.angle_to_goal);
+    //     double sin_theta = std::sin(robot_state.angle_to_goal);
+
+        
+    //     A << 1, 0, -v*sin_theta * T_time,
+    //          0, 1, v*cos_theta * T_time,
+    //          0, 0, 1;
+    //     B << T_time * cos_theta, -v * sin_theta * T_time * T_time / 2,
+    //          T_time * sin_theta, v * cos_theta * T_time * T_time / 2,
+    //          0, T_time;
+
+    //     Q << 1, 0, 0,
+    //          0, 1, 0,
+    //          0, 0, 5;
+    //     R << 0.1, 0,
+    //          0, 5;
+        
+    //     // 求解 Riccati 方程得到 K 矩阵
+    //     Eigen::MatrixXd K = solveLQR(A, B, Q, R);
+        
+    //     // 计算控制输入 u = -K * x
+    //     Eigen::VectorXd x(3); // 系统状态向量
+    //     x << robot_state.x, robot_state.y, robot_state.angle_to_goal; // 示例状态向量
+        
+    //     Eigen::VectorXd u = K * x; // 控制输入
+        
+    //     v = u(0); // 线速度
+    //     double vw = u(1); // 角速度
+        
+    //     // 限制最大速度
+    //     v = std::min(std::max(v, 0.0), 0.3);
+    //     vw = std::min(std::max(vw, -1.0), 1.0);
+        
+    //     diff_move.move_base(v, vw, cmd_vel_pub);
+    // }
+
+    // Eigen::MatrixXd LQRmove::solveLQR(const Eigen::MatrixXd& A, const Eigen::MatrixXd& B, const Eigen::MatrixXd& Q, const Eigen::MatrixXd& R,int max_iter, double eps) {
+    //     int n = A.rows();
+    
+    //     Eigen::MatrixXd P = Q;
+    //     Eigen::MatrixXd P_next;
+    
+    //     for (int i = 0; i < max_iter; ++i) {
+    //         // P = A^T P A - A^T P B (R + B^T P B)^{-1} B^T P A + Q
+    //         Eigen::MatrixXd tmp = B.transpose() * P * B + R;
+    //         Eigen::MatrixXd K = tmp.inverse() * (B.transpose() * P * A);
+    //         P_next = A.transpose() * P * (A - B * K) + Q;
+            
+    //         // 检查收敛
+    //         if ((P_next - P).norm() < eps) {
+    //             P = P_next;
+    //             break;
+    //         }
+    //         P = P_next;
+    //     }
+    
+    //     // 计算最终的 K
+    //     Eigen::MatrixXd K = (R + B.transpose() * P * B).inverse() * (B.transpose() * P * A);
+    //     return K;
+    // }

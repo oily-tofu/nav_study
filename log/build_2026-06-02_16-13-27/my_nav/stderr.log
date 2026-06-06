@@ -1,0 +1,14 @@
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:73:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kmove_base[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   73 |     [01;31m[KDiffmove[m[K::move_base(double vx, double duration, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+      |     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:73:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint diff_drive::Diffmove::move_base(double, double, const SharedPtr&)[m[K’
+In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:52:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid diff_drive::Diffmove::move_base(double, double, const SharedPtr&)[m[K’
+   52 |             void [01;36m[Kmove_base[m[K(double vx, double duration, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
+      |                  [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:49:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass diff_drive::Diffmove[m[K’ defined here
+   49 |     class [01;36m[KDiffmove[m[K
+      |           [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

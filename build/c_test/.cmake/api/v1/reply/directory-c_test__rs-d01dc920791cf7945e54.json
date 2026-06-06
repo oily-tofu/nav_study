@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "c_test__rs",
+		"source" : "/home/tofu/catkin_ws/build/c_test/c_test__rs"
+	}
+}

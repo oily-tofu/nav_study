@@ -1,0 +1,312 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-843cd5e71531b0293f9e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					]
+				},
+				{
+					"build" : "c_test__py",
+					"jsonFile" : "directory-c_test__py-2d79be2516351772c5df.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tofu/catkin_ws/build/c_test/c_test__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "c_test__rs",
+					"jsonFile" : "directory-c_test__rs-d01dc920791cf7945e54.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/tofu/catkin_ws/build/c_test/c_test__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "c_test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_c_test_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_c_test_egg-16d4d5fa0354dc8d5cf4.json",
+					"name" : "ament_cmake_python_build_c_test_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_c_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_c_test-7e9838f4b26535de2531.json",
+					"name" : "ament_cmake_python_copy_c_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test-a7f0cbacb5324241b5d0.json",
+					"name" : "c_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__cpp-e4195423d29174b6800f.json",
+					"name" : "c_test__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "c_test__py::@3fd60db4529fe1253382",
+					"jsonFile" : "target-c_test__py-824c068852532c01713b.json",
+					"name" : "c_test__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_generator_c-7f0a0659db9b9f222785.json",
+					"name" : "c_test__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_generator_py-37245712570c16f53e1d.json",
+					"name" : "c_test__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_c-f585b5c5396bcfe997ae.json",
+					"name" : "c_test__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_c__pyext-53a15c26c00aa3b10e6a.json",
+					"name" : "c_test__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_cpp-32a4a9032e9ae8f5980b.json",
+					"name" : "c_test__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_fastrtps_c-cf36ecd3a205aadb5255.json",
+					"name" : "c_test__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_fastrtps_c__pyext-2035352b3aef07caca3b.json",
+					"name" : "c_test__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_fastrtps_cpp-b1e11f90f91e41562f7d.json",
+					"name" : "c_test__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_introspection_c-ca7a806c38a43d706d3d.json",
+					"name" : "c_test__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_introspection_c__pyext-2c6acb8d4d45165bedae.json",
+					"name" : "c_test__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test__rosidl_typesupport_introspection_cpp-f13827a6a76cf474c18d.json",
+					"name" : "c_test__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "c_test__rs::@e59f67df9659a638ecbe",
+					"jsonFile" : "target-c_test__rs-6a0e55662869cf5b6442.json",
+					"name" : "c_test__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "c_test_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-c_test_uninstall-08dd83d15359e2da725a.json",
+					"name" : "c_test_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hello2_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hello2_node-d036612191b26860d867.json",
+					"name" : "hello2_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hello_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hello_node-9ab60f9906f62424447c.json",
+					"name" : "hello_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t_action_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t_action_c-0fb199c98b81be2fe7c4.json",
+					"name" : "t_action_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t_action_s::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t_action_s-3426a681e101d47bc678.json",
+					"name" : "t_action_s",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t_pub::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t_pub-ee1faebee068c5f95269.json",
+					"name" : "t_pub",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "t_pub_msg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-t_pub_msg-d95e8521883e2e138305.json",
+					"name" : "t_pub_msg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-de19ed06924fccc08338.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/tofu/catkin_ws/build/c_test",
+		"source" : "/home/tofu/catkin_ws/src/c_test"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,18 @@
+[0.020s] Invoking command in '/home/tofu/catkin_ws/build/my_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
+[0.193s] [35m[1mConsolidate compiler generated dependencies of target my_nav[0m
+[0.194s] [ 25%] [32mBuilding CXX object CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o[0m
+[2.029s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:73:5:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[Kmove_base[m[K’ with no type [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.029s]    73 |     [01;31m[KDiffmove[m[K::move_base(double vx, double duration, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub)
+[2.029s]       |     [01;31m[K^~~~~~~~[m[K
+[2.030s] [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:73:5:[m[K [01;31m[Kerror: [m[Kno declaration matches ‘[01m[Kint diff_drive::Diffmove::move_base(double, double, const SharedPtr&)[m[K’
+[2.030s] In file included from [01m[K/home/tofu/catkin_ws/src/my_nav/src/diff_drive_controller.cpp:1[m[K:
+[2.030s] [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:52:18:[m[K [01;36m[Knote: [m[Kcandidate is: ‘[01m[Kvoid diff_drive::Diffmove::move_base(double, double, const SharedPtr&)[m[K’
+[2.030s]    52 |             void [01;36m[Kmove_base[m[K(double vx, double duration, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
+[2.030s]       |                  [01;36m[K^~~~~~~~~[m[K
+[2.030s] [01m[K/home/tofu/catkin_ws/src/my_nav/include/diff_drive_controller.hpp:49:11:[m[K [01;36m[Knote: [m[K‘[01m[Kclass diff_drive::Diffmove[m[K’ defined here
+[2.030s]    49 |     class [01;36m[KDiffmove[m[K
+[2.030s]       |           [01;36m[K^~~~~~~~[m[K
+[4.287s] gmake[2]: *** [CMakeFiles/my_nav.dir/build.make:76：CMakeFiles/my_nav.dir/src/diff_drive_controller.cpp.o] 错误 1
+[4.287s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/my_nav.dir/all] 错误 2
+[4.287s] gmake: *** [Makefile:146：all] 错误 2
+[4.289s] Invoked command in '/home/tofu/catkin_ws/build/my_nav' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/tofu/catkin_ws/install/py_test:/opt/ros/humble /usr/bin/cmake --build /home/tofu/catkin_ws/build/my_nav -- -j16 -l16
