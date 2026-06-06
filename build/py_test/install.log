@@ -1,16 +1,10 @@
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__init__.py
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/path.py
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/test.py
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/goal_to_path_time.py
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/t_pub_msg.py
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/goal_to_path_pure.py
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/t_pub.py
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/__init__.cpython-310.pyc
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/path.cpython-310.pyc
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/test.cpython-310.pyc
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/goal_to_path_time.cpython-310.pyc
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/t_pub_msg.cpython-310.pyc
-/home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/goal_to_path_pure.cpython-310.pyc
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test/__pycache__/t_pub.cpython-310.pyc
 /home/tofu/catkin_ws/install/py_test/share/ament_index/resource_index/packages/py_test
 /home/tofu/catkin_ws/install/py_test/share/py_test/package.xml
@@ -22,7 +16,6 @@
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info/dependency_links.txt
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info/zip-safe
 /home/tofu/catkin_ws/install/py_test/lib/python3.10/site-packages/py_test-0.0.0-py3.10.egg-info/entry_points.txt
-/home/tofu/catkin_ws/install/py_test/lib/py_test/path
 /home/tofu/catkin_ws/install/py_test/lib/py_test/t_pub
 /home/tofu/catkin_ws/install/py_test/lib/py_test/t_pub_msg
 /home/tofu/catkin_ws/install/py_test/lib/py_test/test

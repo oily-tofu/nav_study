@@ -10,9 +10,6 @@ setup.py
 ../../build/py_test/py_test.egg-info/zip-safe
 launch/map_pub.launch.py
 py_test/__init__.py
-py_test/goal_to_path_pure.py
-py_test/goal_to_path_time.py
-py_test/path.py
 py_test/t_pub.py
 py_test/t_pub_msg.py
 py_test/test.py

@@ -1,0 +1,11 @@
+.vscode/
+.continue/
+.marscode/
+build/
+log/
+devel/
+install/
+.vscode/
+tmp/
+*.bag
+*.db

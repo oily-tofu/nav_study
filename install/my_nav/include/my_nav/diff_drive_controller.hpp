@@ -18,6 +18,9 @@
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 #include <tf2/LinearMath/Quaternion.h>
 
+#include <Eigen/Dense>
+#include <Eigen/Core>
+
 namespace diff_drive 
 {
 
@@ -27,7 +30,9 @@ namespace diff_drive
         double distance = 0;
         double angle_to_goal = 0;
         double goal_angle = 0;
+        int hz = 10;
     };
+    extern RobotState robot_state;
 
     class Diffmove
     {
@@ -38,7 +43,9 @@ namespace diff_drive
             void auto_move(const RobotState robot_state, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
             bool is_arrived(const RobotState robot_state, rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
             void pure_pursuit(const RobotState robot_state, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
-    };
+            void LQR_move(const RobotState robot_state, const rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr &cmd_vel_pub);
+            Eigen::MatrixXd solveLQR(const Eigen::MatrixXd& A, const Eigen::MatrixXd& B, const Eigen::MatrixXd& Q, const Eigen::MatrixXd& R,int max_iter = 1000, double eps = 1e-6);
+     };
 
     class Diffinit : public rclcpp::Node
     {
@@ -59,8 +66,6 @@ namespace diff_drive
             geometry_msgs::msg::PoseStamped goal_baselink;
 
             bool is_goal_received = false;
-
-            RobotState robot_state;
 
             Diffmove diff_move_;
 
