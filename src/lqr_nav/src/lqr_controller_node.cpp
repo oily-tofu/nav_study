@@ -15,13 +15,13 @@ namespace lqr_controller
     {
         // 声明参数
         this->declare_parameter<double>("dt", 0.1);
-        this->declare_parameter<double>("max_linear_speed", 0.5);
+        this->declare_parameter<double>("max_linear_speed", 0.3);
         this->declare_parameter<double>("max_angular_speed", 1.0);
-        this->declare_parameter<double>("Q_xx", 1.0);
-        this->declare_parameter<double>("Q_yy", 5.0);
-        this->declare_parameter<double>("Q_tt", 8.0);
+        this->declare_parameter<double>("Q_xx", 1.5);
+        this->declare_parameter<double>("Q_yy", 2.5);
+        this->declare_parameter<double>("Q_tt", 2.5);
         this->declare_parameter<double>("R_v", 1.0);
-        this->declare_parameter<double>("R_w", 2.0);
+        this->declare_parameter<double>("R_w", 1.0);
         this->declare_parameter<int>("curvature_window", 6);
 
         // 读取参数
@@ -57,6 +57,7 @@ namespace lqr_controller
         path_sub_ = this->create_subscription<nav_msgs::msg::Path>(
             "/path", 10, std::bind(&LQRControllerNode::pathCallback, this, std::placeholders::_1));
 
+        // 实际控制用 controlCallback, 性能测试用 controlCallbackTest (手动切换)
         control_timer_ = this->create_wall_timer(
             std::chrono::milliseconds(static_cast<int>(1000.0 / 10)),
             std::bind(&LQRControllerNode::controlCallback, this));
@@ -65,9 +66,7 @@ namespace lqr_controller
     void LQRControllerNode::pathCallback(const nav_msgs::msg::Path::SharedPtr msg)
     {
         trajectory_manager_.setPath(*msg);
-        if (!is_path_received_) {
-            RCLCPP_INFO(this->get_logger(), "Path received with %zu poses.", msg->poses.size());
-        }
+        RCLCPP_INFO(this->get_logger(), "Path received with %zu poses.", msg->poses.size());
         is_path_received_ = true;
         is_robot_arrived_ = false;
         max_reached_index_ = 0;
@@ -79,7 +78,6 @@ namespace lqr_controller
             auto transform = tf_buffer_->lookupTransform("map", "base_link", tf2::TimePointZero);
             state.x = transform.transform.translation.x;
             state.y = transform.transform.translation.y;
-            // 手动从四元数提取Yaw角，避免 tf2 链接问题
             auto& q = transform.transform.rotation;
             double siny_cosp = 2.0 * (q.w * q.z + q.x * q.y);
             double cosy_cosp = 1.0 - 2.0 * (q.y * q.y + q.z * q.z);
@@ -178,6 +176,8 @@ namespace lqr_controller
         // 2. 找最近点
         PathPoint nearest = trajectory_manager_.findNearestPoint(state.x, state.y);
 
+        
+
         // 3. 更新进度
         if (nearest.index > max_reached_index_) {
             max_reached_index_ = nearest.index;
@@ -189,18 +189,11 @@ namespace lqr_controller
 
         // 5. 检查终点
         const auto& path = trajectory_manager_.getPath();
-        int last_idx = static_cast<int>(path.poses.size()) - 1;
         double dist_to_goal = distance2D(state.x, state.y,
-                                          path.poses[last_idx].pose.position.x,
-                                          path.poses[last_idx].pose.position.y);
+                                          path.poses.back().pose.position.x,
+                                          path.poses.back().pose.position.y);
 
-        bool near_last = (nearest.index >= last_idx - 1);
-        bool progressed = true;
-        if (trajectory_manager_.isClosedLoop()) {
-            progressed = (max_reached_index_ >= static_cast<int>(last_idx * 0.7));
-        }
-
-        if (near_last && dist_to_goal < 0.2 && progressed) {
+        if (dist_to_goal < 0.3) {
             geometry_msgs::msg::Twist stop;
             stop.linear.x = 0.0; stop.angular.z = 0.0;
             cmd_vel_pub_->publish(stop);
@@ -260,5 +253,112 @@ namespace lqr_controller
             "e_x=%.3f e_y=%.3f e_theta=%.3f | v_ref=%.3f w_ref=%.3f | v_cmd=%.3f w_cmd=%.3f",
             err.e_x, err.e_y, err.e_theta, ref.v_ref, ref.w_ref, v_cmd, w_cmd);
     }
+
+    // ========== 性能测试版控制回调 ==========
+    // void LQRControllerNode::controlCallbackTest()
+    // {
+    //     if (!is_path_received_) {
+    //         RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 2000, "Path not received yet.");
+    //         return;
+    //     }
+
+    //     if (!trajectory_manager_.isPathValid()) return;
+
+    //     // 首次运行时初始化测试
+    //     if (!analyzer_.isTesting() && analyzer_.getTestsDone() == 0) {
+    //         // 设置 ρ 遍历范围
+    //         analyzer_.setRhoValues({0.1, 0.5, 1.0, 1.5, 2.0, 3.0, 5.0, 10.0});
+    //         analyzer_.setQNominal(Q_);
+    //         // 开始第一个测试
+    //         double rho = analyzer_.getNextRho();
+    //         analyzer_.beginTest(rho);
+    //         is_robot_arrived_ = false;
+    //         max_reached_index_ = 0;
+    //         RCLCPP_INFO(this->get_logger(), "========== Test %d/%d: ρ = %.2f ==========",
+    //             analyzer_.getTestsDone() + 1, analyzer_.getTestsTotal(), rho);
+    //     }
+
+    //     if (!analyzer_.isTesting()) return;
+    //     if (is_robot_arrived_) return;
+
+    //     // 1. 获取位姿
+    //     RobotState state;
+    //     getRobotPose(state);
+
+    //     // 2. 最近点
+    //     PathPoint nearest = trajectory_manager_.findNearestPoint(state.x, state.y);
+    //     if (nearest.index > max_reached_index_) max_reached_index_ = nearest.index;
+
+    //     // 3. 参考点
+    //     double lookahead_dist = 0.0;
+    //     PathPoint ref = trajectory_manager_.getReferencePoint(nearest, max_linear_speed_, &lookahead_dist);
+
+    //     // 4. 检查终点
+    //     const auto& path = trajectory_manager_.getPath();
+    //     int last_idx = static_cast<int>(path.poses.size()) - 1;
+    //     double dist_to_goal = distance2D(state.x, state.y,
+    //                                       path.poses[last_idx].pose.position.x,
+    //                                       path.poses[last_idx].pose.position.y);
+    //     bool near_last = (nearest.index >= last_idx - 1);
+
+
+    //     // 到达终点 → 结束本次测试
+    //     if (near_last && dist_to_goal < 0.2) {
+    //         geometry_msgs::msg::Twist stop;
+    //         stop.linear.x = 0.0; stop.angular.z = 0.0;
+    //         cmd_vel_pub_->publish(stop);
+            
+    //         analyzer_.endTest();
+    //         is_robot_arrived_ = true;
+    //         is_path_received_ = false;
+
+    //         RCLCPP_INFO(this->get_logger(), "Test ρ=%.2f done. RMSE_e_y=%.4f, Max_e_y=%.4f",
+    //             analyzer_.getCurrentRho(),
+    //             analyzer_.getResults().back().rmse_e_y,
+    //             analyzer_.getResults().back().max_e_y);
+
+    //         // 还有下一个 ρ？
+    //         if (!analyzer_.allTestsDone()) {
+    //             double next_rho = analyzer_.getNextRho();
+    //             analyzer_.beginTest(next_rho);
+    //             is_robot_arrived_ = false;
+    //             max_reached_index_ = 0;
+    //             RCLCPP_INFO(this->get_logger(), "========== Test %d/%d: ρ = %.2f ==========",
+    //                 analyzer_.getTestsDone() + 1, analyzer_.getTestsTotal(), next_rho);
+    //         } else {
+    //             analyzer_.printReport();
+    //             rclcpp::shutdown();
+    //         }
+    //         return;
+    //     }
+
+    //     // 5. 计算误差 — 使用缩放后的 Q 矩阵
+    //     ErrorState err = computeErrorState(state, ref);
+    //     analyzer_.record(err.e_y, err.e_theta);
+
+    //     // 6. 用缩放后的 Q 求解 LQR
+    //     auto scaled_Q = analyzer_.getScaledQ();
+    //     lqr_solver_.setWeights(scaled_Q, R_);
+
+    //     Eigen::Matrix3d A_c;
+    //     A_c << 0, ref.w_ref, 0, -ref.w_ref, 0, ref.v_ref, 0, 0, 0;
+    //     Eigen::Matrix<double, 3, 2> B_c;
+    //     B_c << 1, 0, 0, 0, 0, 1;
+    //     auto K = lqr_solver_.solve(A_c, B_c);
+
+    //     Eigen::Vector3d e_vec;
+    //     e_vec << err.e_x, err.e_y, err.e_theta;
+    //     Eigen::Vector2d u = -K * e_vec;
+
+    //     double v_cmd = ref.v_ref + u(0);
+    //     double w_cmd = ref.w_ref + u(1);
+    //     v_cmd = std::max(0.0, std::min(v_cmd, max_linear_speed_));
+    //     w_cmd = std::max(-max_angular_speed_, std::min(w_cmd, max_angular_speed_));
+
+    //     geometry_msgs::msg::Twist cmd;
+    //     cmd.linear.x = v_cmd; cmd.angular.z = w_cmd;
+    //     cmd_vel_pub_->publish(cmd);
+    //     publishPredictionMarkers(nearest);
+    // }
 
 } // namespace lqr_controller

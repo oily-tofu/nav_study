@@ -6,13 +6,11 @@ namespace lqr_controller
     void TrajectoryManager::setPath(const nav_msgs::msg::Path& path)
     {
         path_ = path;
-        is_closed_loop_ = false;
 
         if (path_.poses.size() >= 3) {
             double dist = distance2D(
                 path_.poses[0].pose.position.x, path_.poses[0].pose.position.y,
                 path_.poses.back().pose.position.x, path_.poses.back().pose.position.y);
-            is_closed_loop_ = (dist < 0.2);
         }
     }
 

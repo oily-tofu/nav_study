@@ -1,10 +1,12 @@
 /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd
 /home/tofu/catkin_ws/install/robot/lib/robot/pub_cmd_sdl
 /home/tofu/catkin_ws/install/robot/share/robot/launch/map_pub.launch.py
+/home/tofu/catkin_ws/install/robot/share/robot/launch/navigation_launch.py
 /home/tofu/catkin_ws/install/robot/share/robot/launch/nav.launch.py
 /home/tofu/catkin_ws/install/robot/share/robot/launch/localization_launch.py
 /home/tofu/catkin_ws/install/robot/share/robot/launch/amcl.launch.py
 /home/tofu/catkin_ws/install/robot/share/robot/launch/bringup_launch.py
+/home/tofu/catkin_ws/install/robot/share/robot/launch/plan.launch.py
 /home/tofu/catkin_ws/install/robot/share/robot/map/map.yaml
 /home/tofu/catkin_ws/install/robot/share/robot/map/map.pgm
 /home/tofu/catkin_ws/install/robot/share/robot/config/nav.yaml

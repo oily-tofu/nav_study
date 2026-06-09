@@ -16,6 +16,7 @@
 #include "lqr_nav/common_types.hpp"
 #include "lqr_nav/trajectory_manager.hpp"
 #include "lqr_nav/lqr_solver.hpp"
+#include "lqr_nav/performance_analyzer.hpp"
 
 namespace lqr_controller
 {
@@ -36,7 +37,7 @@ namespace lqr_controller
 
         bool is_path_received_ = false;
         bool is_robot_arrived_ = false;
-        int max_reached_index_ = 0;
+        int max_reached_index_ = 0; 
 
         // 算法模块
         TrajectoryManager trajectory_manager_;
@@ -50,10 +51,14 @@ namespace lqr_controller
         double max_angular_speed_ = 1.0;
         int curvature_window_ = 6;
 
+        // 性能分析器
+        PerformanceAnalyzer analyzer_;
+
         // 方法
         void initProperties();
         void pathCallback(const nav_msgs::msg::Path::SharedPtr msg);
         void controlCallback();
+        void controlCallbackTest();  // 性能测试版
         void getRobotPose(RobotState& state);
 
         void publishPredictionMarkers(const PathPoint& nearest);

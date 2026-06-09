@@ -56,6 +56,20 @@ ament_target_dependencies(lqr_solver
   Eigen3
 )
 
+# ===== 库3: performance_analyzer =====
+add_library(performance_analyzer
+  src/performance_analyzer.cpp
+)
+target_include_directories(performance_analyzer
+  PUBLIC
+    $<BUILD_INTERFACE:${LQR_INCLUDE_DIR}>
+    $<INSTALL_INTERFACE:include>
+)
+ament_target_dependencies(performance_analyzer
+  rclcpp
+  Eigen3
+)
+
 # ===== 可执行文件 =====
 add_executable(lqr_tracking_node
   src/lqr_tracking_node.cpp
@@ -77,6 +91,7 @@ ament_target_dependencies(lqr_tracking_node
 target_link_libraries(lqr_tracking_node
   trajectory_manager
   lqr_solver
+  performance_analyzer
 )
 
 # ===== 安装 =====
@@ -84,6 +99,7 @@ install(
   TARGETS
     trajectory_manager
     lqr_solver
+    performance_analyzer
   EXPORT ${PROJECT_NAME}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib

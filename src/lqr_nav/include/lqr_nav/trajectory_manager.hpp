@@ -6,6 +6,8 @@
 #include "nav_msgs/msg/path.hpp"
 #include "lqr_nav/common_types.hpp"
 
+// 轨迹管理器类，用于管理 LQR 控制器的轨迹
+
 namespace lqr_controller
 {
 
@@ -22,14 +24,13 @@ namespace lqr_controller
 
         int getPathSize() const { return static_cast<int>(path_.poses.size()); }
         bool isPathValid() const { return path_.poses.size() >= 2; }
-        bool isClosedLoop() const { return is_closed_loop_; }
+
 
         const nav_msgs::msg::Path& getPath() const { return path_; }
 
     private:
         nav_msgs::msg::Path path_;
         int curvature_window_ = 6;
-        bool is_closed_loop_ = false;
 
         double calcPathYaw(int idx) const;
         double calcPathCurvature(int idx) const;
